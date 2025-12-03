@@ -145,7 +145,7 @@ export default function SolutionsPage({ onNavigate, onOpenDemo }: SolutionsPageP
               <div className="ecos-title">SIEM & Analytics</div>
               <div className="ecos-sub">Feed exposure logs and browser alerts directly into your SOC dashboard.</div>
               <div className="ecos-chips">
-                {['Splunk', 'Sentinel', 'QRadar', 'Datadog'].map((v) => (
+                {['Splunk', 'RootpingBDR', 'QRadar', 'Datadog'].map((v) => (
                   <span key={v} className="ecos-chip">{v}</span>
                 ))}
               </div>

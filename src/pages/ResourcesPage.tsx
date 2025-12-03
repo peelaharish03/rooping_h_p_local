@@ -239,7 +239,7 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
           </div>
           <div className="integrated-title">Seamlessly integrated with</div>
           <div className="integrated-logos">
-            {['Splunk', 'Okta', 'Sentinel', 'ServiceNow', 'CrowdStrike'].map((v) => (
+            {['Splunk', 'Okta', 'RootpingBDR', 'ServiceNow', 'CrowdStrike'].map((v) => (
               <span key={v} className="integrated-logo">{v}</span>
             ))}
           </div>

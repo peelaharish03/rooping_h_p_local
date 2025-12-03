@@ -70,7 +70,7 @@ export default function PlatformPage({ onNavigate, onOpenDemo }: PlatformPagePro
     <div className="platform-page">
       <section id="platform-hero" className="platform-hero">
         <div className="container">
-          <div className="center"><div className="pill"><span className="dot"></span>SENTINELWEB ENGINE V2.8.0</div></div>
+          <div className="center"><div className="pill"><span className="dot"></span>RootpingBDR ENGINE V2.8.0</div></div>
           <h1 className="platform-heading">
             <span className="platform-heading-line">One Platform.</span>
             <span className="platform-gradient-text">Total Visibility.</span>
@@ -112,7 +112,7 @@ export default function PlatformPage({ onNavigate, onOpenDemo }: PlatformPagePro
             <div className="abd-console">
               <div className="abd-console-head">
                 <div className="abd-console-icon"><Shield className="icon-32 accent" /></div>
-                <h4 className="abd-console-title">Sentinel<span className="accent">Web</span></h4>
+                <h4 className="abd-console-title">RootpingBDR<span className="accent">Web</span></h4>
                 <p className="abd-console-sub">Enterprise Security Console</p>
               </div>
               <form className="abd-form">
@@ -131,7 +131,7 @@ export default function PlatformPage({ onNavigate, onOpenDemo }: PlatformPagePro
                   </div>
                 </div>
                 <button type="submit" className="sign-in-btn">Sign In →</button>
-                <p className="abd-note">Protected by SentinelWeb Identity Guard.</p>
+                <p className="abd-note">Protected by RootpingBDR Identity Guard.</p>
               </form>
             </div>
           </div>
