@@ -1,5 +1,5 @@
 import React from 'react';
-import { Activity, BarChart3, Shield, Lock, Terminal, AlertTriangle, CheckCircle, Globe } from 'lucide-react';
+import { Activity, BarChart3, Lock, Terminal, AlertTriangle, Check, Globe } from 'lucide-react';
 import styles from './SentinelOverview.module.css';
 
 export default function SentinelOverview() {
@@ -8,6 +8,9 @@ export default function SentinelOverview() {
       <div className={styles.card}>
         <div className={styles.cardTop}>
           <div className={styles.brandRow}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+            </svg>
             <span className={styles.brand}>Sentinel</span><span className={styles.brandAccent}>Web</span>
           </div>
           <div className={styles.agents}><span className={styles.dot}></span>Agents Online: 1</div>
@@ -16,7 +19,6 @@ export default function SentinelOverview() {
           <div className={styles.sidebar}>
             <div className={styles.sbItem}><Activity size={16} /></div>
             <div className={styles.sbItem}><BarChart3 size={16} /></div>
-            <div className={styles.sbItem}><Shield size={16} /></div>
             <div className={styles.sbItem}><Lock size={16} /></div>
             <div className={styles.sbItem}><Terminal size={16} /></div>
           </div>
@@ -36,7 +38,10 @@ export default function SentinelOverview() {
                 </svg>
               </div>
               <div className={styles.threats}>
-                <div className={styles.thHead}><span className={styles.thTitle}>LIVE THREATS</span><span>1:50 AM</span></div>
+                <div className={styles.thHead}>
+                  <div className={styles.thLeft}><span className={styles.liveDot}></span><span className={styles.thTitle}>LIVE THREATS</span></div>
+                  <span>1:50 AM</span>
+                </div>
                 <div className={styles.thList}>
                   <div className={styles.thItem}>
                     <div className={`${styles.thBadge} ${styles.thBadgeRed}`}><AlertTriangle size={14} /> ALERTED</div>
@@ -59,11 +64,11 @@ export default function SentinelOverview() {
         <p className={styles.desc}>
           Most breaches start on the outside. We continuously map your entire digital footprint—cloud assets, leaked credentials, and shadow IT—correlating billions of signals to find the one weakness that matters.
         </p>
-        <div className={styles.bullets}>
-          <div className={styles.bullet}><span className={styles.check}><CheckCircle size={12} /></span><span className={styles.bulletText}>Real-time correlation of Dark Web & OSINT signals</span></div>
-          <div className={styles.bullet}><span className={styles.check}><CheckCircle size={12} /></span><span className={styles.bulletText}>Automated discovery of shadow cloud buckets & APIs</span></div>
-          <div className={styles.bullet}><span className={styles.check}><CheckCircle size={12} /></span><span className={styles.bulletText}>Zero-noise verification engine eliminates false positives</span></div>
-          <div className={styles.bullet}><span className={styles.check}><CheckCircle size={12} /></span><span className={styles.bulletText}>Instant alerts for leaked employee credentials</span></div>
+          <div className={styles.bullets}>
+          <div className={styles.bullet}><span className={styles.check}><Check size={12} /></span><span className={styles.bulletText}>Real-time correlation of Dark Web & OSINT signals</span></div>
+          <div className={styles.bullet}><span className={styles.check}><Check size={12} /></span><span className={styles.bulletText}>Automated discovery of shadow cloud buckets & APIs</span></div>
+          <div className={styles.bullet}><span className={styles.check}><Check size={12} /></span><span className={styles.bulletText}>Zero-noise verification engine eliminates false positives</span></div>
+          <div className={styles.bullet}><span className={styles.check}><Check size={12} /></span><span className={styles.bulletText}>Instant alerts for leaked employee credentials</span></div>
         </div>
       </div>
     </div>

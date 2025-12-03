@@ -16,8 +16,8 @@
 .resources-actions { margin-top: 2rem; display: flex; justify-content: center; gap: 1rem; }
 .resources-demo { display: inline-flex; align-items: center; justify-content: center; width: 160px; height: 50px; border-radius: 4px; background: #ffffff; color: rgb(11, 17, 33); font-weight: 600; box-shadow: 0 1px 2px rgba(0,0,0,0.2); transition: background-color 200ms ease; }
 .resources-demo:hover { background: rgba(255,255,255,0.9); }
-.resources-trial { display: inline-flex; align-items: center; justify-content: center; width: 160px; height: 50px; border-radius: 4px; border: 1px solid #ffffff; color: #ffffff; font-weight: 600; transition: background-color 200ms ease; }
-.resources-trial:hover { background: rgba(255,255,255,0.05); }
+.resources-trial { display: inline-flex; align-items: center; justify-content: center; width: 160px; height: 50px; border-radius: 4px; border: 1px solid #ffffff; color: #ffffff; font-weight: 600; transition: background-color 200ms ease; background: transparent; }
+.resources-trial:hover { background: transparent; }
 .dark { color: rgb(11, 17, 33); }
 .ml-2 { margin-left: 0.5rem; }
 .icon-arrow-right { -webkit-mask-image: url('/assets/website icons/arrow-right.svg'); mask-image: url('/assets/website icons/arrow-right.svg'); }
@@ -180,12 +180,12 @@
 .use-card:hover .use-title { color: #5eead4; }
 .use-card:hover .use-iconbox { border-color: rgba(45,212,191,0.4); }
 .use-card:hover .brand400 { color: #5eead4; }
-.use-card--gradient { background: linear-gradient(to right, rgba(45,212,191,0.25), rgba(45,212,191,0.40)); border-color: rgba(45,212,191,0.4); }
+.use-card--gradient { background: rgb(19 78 74 / 0.4); border-color: rgb(19 78 74 / 0.4); }
 .use-card-head { display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
 .use-iconbox { width: 2.5rem; height: 2.5rem; border-radius: 0.75rem; border: 1px solid rgba(255,255,255,0.1); background: #0b1121; display: flex; align-items: center; justify-content: center; }
 .use-title { margin-top: 0.75rem; color: #ffffff; font-size: 1.125rem; font-weight: 700; }
 .use-sub { margin-top: 0.5rem; color: #94a3b8; font-size: 0.875rem; }
-.use-gradient-btn { margin-top: 0.75rem; color: #2dd4bf; font-weight: 600; transition: color 200ms ease; }
+.use-gradient-btn { margin-top: 0.75rem; color: #2dd4bf; font-weight: 600; transition: color 200ms ease; background: transparent; border: none; padding: 0; }
 .use-gradient-btn:hover { color: #5eead4; }
 .integrated-title { margin-top: 2rem; text-align: center; color: #64748b; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.875rem; }
 @media (min-width: 768px) { .integrated-title { font-size: 1rem; } }

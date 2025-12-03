@@ -229,11 +229,10 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
                 <div className="use-card-head">
                   {!c.gradient && <div className="use-iconbox">{c.i}</div>}
                   <div className="use-title">{c.t}</div>
-                </div>
-                {c.gradient ? (
-                  <button onClick={() => onNavigate('platform')} className="use-gradient-btn">Contact Engineering →</button>
-                ) : (
                   <div className="use-sub">{c.s}</div>
+                </div>
+                {c.gradient && (
+                  <button onClick={() => onNavigate('platform')} className="use-gradient-btn">Contact Engineering →</button>
                 )}
               </div>
             ))}
