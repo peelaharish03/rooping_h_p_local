@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { CheckCircle, X } from 'lucide-react';
 import './DemoModal.css';
 
@@ -14,6 +14,18 @@ export default function DemoModal({ open, onClose }: DemoModalProps) {
       document.body.style.overflow = '';
     };
   }, [open]);
+
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [company, setCompany] = useState('');
+  const [role, setRole] = useState('');
+  const [source, setSource] = useState('');
+  const [accepted, setAccepted] = useState(false);
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
 
   if (!open) return null;
 
@@ -66,6 +78,7 @@ export default function DemoModal({ open, onClose }: DemoModalProps) {
                 <option>Search</option>
                 <option>Other</option>
               </select>
+              {errors.source && <p id="source-error" className="mt-1 text-xs text-red-400">{errors.source}</p>}
             </div>
             <label className="demo-consent">
               <input type="checkbox" defaultChecked className="demo-checkbox" />
