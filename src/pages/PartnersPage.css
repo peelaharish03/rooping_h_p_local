@@ -9,16 +9,25 @@
 .partners-section { padding-top: 4rem; padding-bottom: 4rem; }
 .partners-grid { display: grid; grid-template-columns: 1fr; gap: 2.5rem; align-items: start; }
 @media (min-width: 1024px) { .partners-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-.partners-h2 { color: #ffffff; font-size: 1.5rem; font-weight: 700; }
+.partners-h2 { color: #ffffff; font-size: 2.75rem; font-weight: 700; }
+@media (min-width: 768px) { .partners-h2 { font-size: 3rem; } }
 .partners-features { margin-top: 1.5rem; }
 .partners-feature { display: flex; align-items: flex-start; gap: 0.75rem; }
 .feature-icon { width: 2.5rem; height: 2.5rem; border-radius: 0.75rem; background: #0e1529; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; }
+.feature-icon--emerald { background: rgba(16,185,129,0.15); border-color: rgba(16,185,129,0.35); }
+.feature-icon--purple { background: rgba(124,58,237,0.15); border-color: rgba(124,58,237,0.35); }
+.feature-icon--blue { background: rgba(59,130,246,0.15); border-color: rgba(59,130,246,0.35); }
+.feature-svg { width: 20px; height: 20px; color: #ffffff; }
+.feature-mask { width: 20px; height: 20px; background: #ffffff; display: inline-block; }
+.icon-handshake { -webkit-mask-image: url('/assets/website icons/handshake.svg'); mask-image: url('/assets/website icons/handshake.svg'); }
+.icon-users { -webkit-mask-image: url('/assets/website icons/users.svg'); mask-image: url('/assets/website icons/users.svg'); }
+.icon-building-2 { -webkit-mask-image: url('/assets/website icons/building-2.svg'); mask-image: url('/assets/website icons/building-2.svg'); }
 .icon-20 { width: 20px; height: 20px; }
 .brand400 { color: #2dd4bf; }
 .purple { color: #7c3aed; }
 .brand500 { color: #14b8a6; }
-.feature-title { color: #ffffff; font-weight: 600; }
-.feature-sub { color: #94a3b8; font-size: 0.875rem; }
+.feature-title { color: #ffffff; font-weight: 600; font-size: 1.5rem; }
+.feature-sub { color: #94a3b8; font-size: 1.375rem; line-height: 1.8; }
 .partner-types { margin-top: 2rem; border-radius: 1rem; background: #0e1529; border: 1px solid rgba(255,255,255,0.1); padding: 1.5rem; }
 .partner-types-title { color: #ffffff; font-weight: 600; }
 .partner-types-list { margin-top: 1rem; }

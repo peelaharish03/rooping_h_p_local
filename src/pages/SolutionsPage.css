@@ -66,6 +66,9 @@
 @media (min-width: 768px) { .solutions-h3 { font-size: 2.25rem; } }
 .solutions-sub2 { margin-top: 0.75rem; color: #94a3b8; max-width: 40rem; }
 
+.solutions-h4 { font-size: 2rem; font-weight: 700; color: #ffffff; text-align: center; }
+@media (min-width: 768px) { .solutions-h4 { font-size: 2.5rem; } }
+
 .asm-card { border-radius: 1rem; border: 1px solid #1f2937; background: #0d1219; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.35); position: relative; overflow: hidden; width: 540px; height: 340px; margin-left: auto; margin-right: auto; }
 .asm-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 3rem; }
 .asm-title { color: #9ca3af; font-size: 0.875rem; font-weight: 500; letter-spacing: 0.08em; }
@@ -97,7 +100,7 @@
 .ecos-card:hover { background: rgba(45,212,191,0.1); border-color: rgba(45,212,191,0.4); }
 .ecos-card:hover .ecos-chip { background: rgba(45,212,191,0.2); color: #5eead4; border-color: rgba(45,212,191,0.4); }
 .ecos-actions { margin-top: 2rem; text-align: center; }
-.ecos-view-btn { color: #2dd4bf; font-weight: 600; transition: color 200ms ease; }
+.ecos-view-btn { color: #2dd4bf; font-weight: 600; transition: color 200ms ease; background: transparent; border: none; font-size: 1.125rem; padding: 0.5rem 1rem; }
 .ecos-view-btn:hover { color: #5eead4; }
 @media (max-width: 640px) {
   .solutions-title { font-size: 2.25rem; white-space: normal; }

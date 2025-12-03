@@ -27,6 +27,9 @@
 .threats { border-radius: 10px; background: rgba(11, 17, 33, 0.8); border: 1px solid rgba(255,255,255,0.1); padding: 10px; }
 .thHead { display: flex; align-items: center; justify-content: space-between; font-size: 12px; color: #94a3b8; }
 .thTitle { color: #ffffff; font-weight: 600; }
+.thLeft { display: inline-flex; align-items: center; gap: 6px; }
+.liveDot { width: 8px; height: 8px; border-radius: 9999px; background: #ef4444; display: inline-block; animation: liveBlink 1s steps(2, start) infinite; }
+@keyframes liveBlink { 50% { opacity: 0.25; } }
 .thList { margin-top: 8px; display: grid; gap: 8px; }
 .thItem { }
 .thBadge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 8px; border-radius: 9999px; font-size: 11px; color: #ffffff; }

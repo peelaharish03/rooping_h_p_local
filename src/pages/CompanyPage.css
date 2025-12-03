@@ -36,7 +36,7 @@
 .feature-card { border-radius: 1rem; background: #0e1529; border: 1px solid rgba(255,255,255,0.1); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
 .feature-card:hover { background: rgba(45,212,191,0.1); border-color: rgba(45,212,191,0.4); }
 .feature-title { font-size: 2.125rem; font-weight: 600; color: #ffffff; text-align: left; }
-.feature-sub { margin-top: 0.5rem; font-size: 0.875rem; color: #94a3b8; text-align: left; }
+.feature-sub { margin-top: 0.5rem; font-size: 1.2rem; color: #94a3b8; text-align: left; }
 .values-grid { margin-top: 2rem; display: grid; grid-template-columns: 1fr; gap: 2rem; }
 @media (min-width: 768px) { .values-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .value { text-align: center; }
