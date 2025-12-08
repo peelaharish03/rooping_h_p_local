@@ -31,7 +31,7 @@ export default function CompanyPage({ onNavigate, onOpenDemo }: CompanyPageProps
             <span className="company-gradient">Rootping</span>
           </h1>
           <p className="company-paragraph company-paragraph-strong">
-            Rootping is a leader in Exposure Threat Management and Enterprise Browser Security, helping organizations secure their users, data, and cloud environments with precision and speed.
+            Rootping is a leader in Exposure Threat Management and Enterprise Browser Security, helping organizations secure their users, data, and cloud environments with precision and <br />speed.
           </p>
           <p className="company-paragraph">
             We eliminate blind spots modern businesses face. Our platform empowers security teams to proactively detect exposure, control browser-based risk, and harden every endpoint accessing critical corporate resources.

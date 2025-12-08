@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { CheckCircle, X } from 'lucide-react';
 import './DemoModal.css';
 
@@ -14,18 +14,6 @@ export default function DemoModal({ open, onClose }: DemoModalProps) {
       document.body.style.overflow = '';
     };
   }, [open]);
-
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [company, setCompany] = useState('');
-  const [role, setRole] = useState('');
-  const [source, setSource] = useState('');
-  const [accepted, setAccepted] = useState(false);
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
 
   if (!open) return null;
 
@@ -46,19 +34,19 @@ export default function DemoModal({ open, onClose }: DemoModalProps) {
           <form className="demo-form">
             <div>
               <div className="demo-label">FULL NAME</div>
-              <input className="demo-input" defaultValue="John Smith" />
+              <input className="demo-input" placeholder="John Smith" />
             </div>
             <div>
               <div className="demo-label">WORK EMAIL</div>
-              <input className="demo-input" defaultValue="john@company.com" />
+              <input className="demo-input" placeholder="john@company.com" />
             </div>
             <div>
               <div className="demo-label">PHONE NUMBER</div>
-              <input className="demo-input" defaultValue="+1 (555) 123-4567" />
+              <input className="demo-input" placeholder="+1 (555) 123-4567" />
             </div>
             <div>
               <div className="demo-label">COMPANY</div>
-              <input className="demo-input" defaultValue="Acme Inc." />
+              <input className="demo-input" placeholder="Acme Inc." />
             </div>
             <div>
               <div className="demo-label">JOB ROLE</div>
@@ -73,12 +61,13 @@ export default function DemoModal({ open, onClose }: DemoModalProps) {
               <div className="demo-label">HOW DID YOU HEAR ABOUT US?</div>
               <select className="demo-select">
                 <option>Select an option...</option>
+                <option>Search Engine (Google/Bing)</option>
+                <option>LinkedIn / Social Media</option>
+                <option>Podcaste / News</option>
+                 <option>Events / Conference</option>
                 <option>Referral</option>
-                <option>Conference</option>
-                <option>Search</option>
                 <option>Other</option>
               </select>
-              {errors.source && <p id="source-error" className="mt-1 text-xs text-red-400">{errors.source}</p>}
             </div>
             <label className="demo-consent">
               <input type="checkbox" defaultChecked className="demo-checkbox" />

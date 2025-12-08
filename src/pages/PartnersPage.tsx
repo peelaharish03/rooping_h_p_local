@@ -40,7 +40,7 @@ export default function PartnersPage({ onNavigate, onOpenDemo }: PartnersPagePro
                 </div>
                 <div>
                   <div className="feature-title">High-Margin Opportunities</div>
-                  <div className="feature-sub">Competitive margins and recurring revenue streams for MSPs and resellers.</div>
+                  <div className="feature-sub">Competitive margins and recurring revenue streams for MSPs and <br />resellers.</div>
                 </div>
               </div>
               <div className="partners-feature">
@@ -54,7 +54,7 @@ export default function PartnersPage({ onNavigate, onOpenDemo }: PartnersPagePro
                 </div>
                 <div>
                   <div className="feature-title">Co-Marketing & Support</div>
-                  <div className="feature-sub">Access to white-labeled collateral, sales training, and dedicated partner managers.</div>
+                  <div className="feature-sub">Access to white-labeled collateral, sales training, and dedicated <br />partner managers.</div>
                 </div>
               </div>
               <div className="partners-feature">
@@ -69,7 +69,7 @@ export default function PartnersPage({ onNavigate, onOpenDemo }: PartnersPagePro
                 </div>
                 <div>
                   <div className="feature-title">Enterprise-Grade Tech</div>
-                  <div className="feature-sub">Offer the only platform that combines attack surface management with browser security.</div>
+                  <div className="feature-sub">Offer the only platform that combines attack surface <br />management with browser security.</div>
                 </div>
               </div>
             </div>
@@ -98,20 +98,20 @@ export default function PartnersPage({ onNavigate, onOpenDemo }: PartnersPagePro
               <div className="partner-form-row">
                 <div>
                   <div className="partner-label">FIRST NAME</div>
-                  <input className="partner-input" defaultValue="Jane" />
+                  <input className="partner-input" placeholder="Jane" />
                 </div>
                 <div>
                   <div className="partner-label">LAST NAME</div>
-                  <input className="partner-input" defaultValue="Doe" />
+                  <input className="partner-input" placeholder="Doe" />
                 </div>
               </div>
               <div>
                 <div className="partner-label">WORK EMAIL</div>
-                <input className="partner-input" defaultValue="jane@company.com" />
+                <input className="partner-input" placeholder="jane@company.com" />
               </div>
               <div>
                 <div className="partner-label">COMPANY NAME</div>
-                <input className="partner-input" defaultValue="Acme Security Inc." />
+                <input className="partner-input" placeholder="Acme Security Inc." />
               </div>
               <div>
                 <div className="partner-label">PARTNERSHIP INTEREST</div>
