@@ -70,10 +70,10 @@ export default function PlatformPage({ onNavigate, onOpenDemo }: PlatformPagePro
     <div className="platform-page">
       <section id="platform-hero" className="platform-hero">
         <div className="container">
-          <div className="center"><div className="pill"><span className="dot"></span>RootpingBDR ENGINE V2.8.0</div></div>
+          <div className="center"><div className="pill"><span className="dot"></span>SENTINELWEB ENGINE V2.8.0</div></div>
           <h1 className="platform-heading">
-            <span className="platform-heading-line">One Platform.</span>
-            <span className="platform-gradient-text">Total Visibility.</span>
+            <span className="platform-heading-line md:text-7xl">One Platform.</span>
+            <span className="platform-gradient-text md:text-7xl">Total <span style={{color: 'rgb(45 212 191 / var(--tw-text-opacity, 1))'}}>Visibility.</span></span>
           </h1>
           <p className="platform-sub">
             From the dark web to the browser tab, RootPing unifies exposure management and endpoint security into a single, intelligent nerve center.
@@ -112,7 +112,7 @@ export default function PlatformPage({ onNavigate, onOpenDemo }: PlatformPagePro
             <div className="abd-console">
               <div className="abd-console-head">
                 <div className="abd-console-icon"><Shield className="icon-32 accent" /></div>
-                <h4 className="abd-console-title">RootpingBDR<span className="accent">Web</span></h4>
+                <h4 className="abd-console-title">Sentinel<span className="accent">Web</span></h4>
                 <p className="abd-console-sub">Enterprise Security Console</p>
               </div>
               <form className="abd-form">
@@ -120,18 +120,18 @@ export default function PlatformPage({ onNavigate, onOpenDemo }: PlatformPagePro
                   <label className="abd-label">USERNAME</label>
                   <div className="abd-input-wrap">
                     <Fingerprint className="abd-input-icon" />
-                    <input type="text" defaultValue="admin_user" className="abd-input" />
+                    <input type="text" placeholder="admin_user" className="abd-input" />
                   </div>
                 </div>
                 <div>
                   <label className="abd-label">PASSWORD</label>
                   <div className="abd-input-wrap">
                     <Lock className="abd-input-icon" />
-                    <input type="password" defaultValue="••••••••" className="abd-input" />
+                    <input type="password" placeholder="••••••••" className="abd-input" />
                   </div>
                 </div>
                 <button type="submit" className="sign-in-btn">Sign In →</button>
-                <p className="abd-note">Protected by RootpingBDR Identity Guard.</p>
+                <p className="abd-note">Protected by SentinelWeb Identity Guard.</p>
               </form>
             </div>
           </div>

@@ -1,26 +1,27 @@
 .company-page { min-height: 100vh; }
-.company-hero { padding-top: 7rem; }
+.company-hero { padding-top: 4rem; }
 .company-container { max-width: 80rem; margin-left: auto; margin-right: auto; padding-left: 1.5rem; padding-right: 1.5rem; }
 .company-center { text-align: center; }
 .company-title { font-weight: 800; line-height: 1.1; font-size: 3rem; white-space: nowrap; color: #ffffff; }
-@media (min-width: 768px) { .company-title { font-size: 4.5rem; } }
+@media (min-width: 768px) { .company-title { font-size: 3.75rem; line-height: 1; } }
 .company-title-static { color: #ffffff; }
-.company-gradient { background-image: linear-gradient(to right, #2dd4bf, #5eead4, #7c3aed); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.company-paragraph { margin-top: 1rem; max-width: 64rem; margin-left: auto; margin-right: auto; color: #94a3b8; }
-.company-paragraph-strong { margin-top: 1.5rem; color: #cbd5e1; }
+.company-gradient { color: rgb(45 212 191 / 1); }
+.company-paragraph { margin-top: 1rem; max-width: 64rem; margin-left: auto; margin-right: auto; color: #94a3b8; font-size: 1.25rem; line-height: 1.75rem; }
+.company-paragraph-strong { margin-top: 1.5rem; color: #cbd5e1; font-size: 1.25rem; line-height: 1.75rem; }
 .company-section { padding-top: 4rem; padding-bottom: 4rem; border-top: 1px solid rgba(255,255,255,0.1); }
 .mission-card { min-height: 360px; background: #0a1628; border-radius: 1rem; display: flex; align-items: center; justify-content: center; padding-left: 1rem; padding-right: 1rem; }
 .mission-inner { max-width: 64rem; width: 100%; margin-left: auto; margin-right: auto; text-align: center; padding-top: 3rem; padding-bottom: 3rem; }
 .mission-icon { display: inline-flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; border-radius: 9999px; border: 2px solid #2dd4bf; background: transparent; margin-bottom: 2rem; }
 .icon-32 { width: 32px; height: 32px; }
 .teal400 { color: #2dd4bf; }
-.mission-title { font-size: 3rem; font-weight: 700; color: #ffffff; margin-bottom: 2rem; }
+.mission-title { font-size: 2rem; font-weight: 700; color: #ffffff; margin-bottom: 2rem; }
+@media (min-width: 768px) { .mission-title { font-size: 2.25rem; } }
 .mission-text { color: #d1d5db; font-size: 1.125rem; line-height: 1.75; }
 .mission-text > * + * { margin-top: 1.5rem; }
 .pulse { animation: pulse 2s ease-in-out infinite; }
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
-.company-subtitle { font-size: 1.5rem; font-weight: 700; color: #ffffff; text-align: center; }
-@media (min-width: 768px) { .company-subtitle { font-size: 1.875rem; } }
+.company-subtitle { font-size: 2rem; font-weight: 700; color: #ffffff; text-align: center; }
+@media (min-width: 768px) { .company-subtitle { font-size: 2.25rem; } }
 .videos-grid { margin-top: 2rem; display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
 @media (min-width: 768px) { .videos-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .video-card { border-radius: 1rem; background: #0e1529; border: 1px solid rgba(255,255,255,0.1); padding: 1rem; }
@@ -35,8 +36,8 @@
 @media (min-width: 768px) { .features-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .feature-card { border-radius: 1rem; background: #0e1529; border: 1px solid rgba(255,255,255,0.1); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
 .feature-card:hover { background: rgba(45,212,191,0.1); border-color: rgba(45,212,191,0.4); }
-.feature-title { font-size: 2.125rem; font-weight: 600; color: #ffffff; text-align: left; }
-.feature-sub { margin-top: 0.5rem; font-size: 1.2rem; color: #94a3b8; text-align: left; }
+.feature-title { font-size: 1.25rem; font-weight: 600; color: #ffffff; text-align: left; }
+.feature-sub { margin-top: 0.5rem; font-size: 0.9375rem; color: #94a3b8; text-align: left; }
 .values-grid { margin-top: 2rem; display: grid; grid-template-columns: 1fr; gap: 2rem; }
 @media (min-width: 768px) { .values-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .value { text-align: center; }

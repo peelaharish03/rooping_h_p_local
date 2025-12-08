@@ -41,7 +41,11 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
             <span className="resources-line">Secure Every <span className="resources-gradient-2">Click.</span></span>
           </h1>
           <p className="resources-sub">
-            A unified security platform that protects your entire digital footprint and every browser your workforce uses — instantly, intelligently, and at scale.
+            A unified security platform that protects your entire digital footprint and
+            <br />
+            every browser your workforce uses—instantly, intelligently, and at
+            <br />
+            scale
           </p>
           <div className="resources-actions">
             <button onClick={onOpenDemo} className="resources-demo">
@@ -51,57 +55,47 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
             <button onClick={onOpenDemo} className="resources-trial">Start Free Trial</button>
           </div>
           <div className="resources-showcase">
-            <div className="demo-card">
-              <div className="demo-head">
-                <div className="demo-dots"><span className="dot red"></span><span className="dot amber"></span><span className="dot green"></span></div>
-              </div>
-              <div className="demo-body">
-                <div className="neon-center">
-                  <div className="neon-core">
-                    <div className="glow-blue"></div>
-                    <div className="glow-teal"></div>
-                    <div className="neon-border"></div>
-                    <svg className="spin-slow" width="40" height="40" viewBox="0 0 40 40">
-                      <defs>
-                        <filter id="neon_glow">
-                          <feDropShadow dx="0" dy="0" stdDeviation="1.5" floodColor="#00F5FF" floodOpacity="0.9" />
-                          <feDropShadow dx="0" dy="0" stdDeviation="3" floodColor="#00C2FF" floodOpacity="0.7" />
-                        </filter>
-                      </defs>
-                      <g stroke="#00F5FF" strokeWidth="1.5" fill="none" opacity="0.95" filter="url(#neon_glow)">
-                        <circle cx="20" cy="20" r="12" />
-                        <ellipse cx="20" cy="20" rx="11" ry="6.5" />
-                        <ellipse cx="20" cy="20" rx="6.5" ry="11" transform="rotate(90 20 20)" />
-                        <line x1="8" y1="20" x2="32" y2="20" />
-                        <line x1="20" y1="8" x2="20" y2="32" />
-                      </g>
+            <div className="security-visual-wrap">
+              <div className="security-visual">
+                <div className="sv-bar">
+                  <div className="sv-dots">
+                    <span className="sv-dot sv-dot--red"></span>
+                    <span className="sv-dot sv-dot--amber"></span>
+                    <span className="sv-dot sv-dot--green"></span>
+                  </div>
+                  <div className="sv-stubs">
+                    <span className="sv-stub sv-stub--sm"></span>
+                    <span className="sv-stub sv-stub--lg"></span>
+                  </div>
+                </div>
+                <div className="bg-line"></div>
+
+                <div className="center-orbit">
+                  <div className="center-circle">
+                    <svg
+                      className="globe-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 40 40"
+                      aria-hidden="true"
+                    >
+                      <circle cx="20" cy="20" r="12" />
+                      <ellipse cx="20" cy="20" rx="11" ry="6.5" />
+                      <ellipse cx="20" cy="20" rx="6.5" ry="11" />
+                      <line x1="8" y1="20" x2="32" y2="20" />
+                      <line x1="20" y1="8" x2="20" y2="32" />
                     </svg>
                   </div>
+                  
+                </div>
 
-                  <div
-                    className="abs-center"
-                    style={{
-                      transform: `translate(calc(-50% + ${floatingElements.credential.x}px), calc(-50% + ${floatingElements.credential.y}px))`,
-                      transition: 'transform 0.05s linear',
-                    }}
-                  >
-                    <div className="label label--red" style={{ left: '-12rem', top: '-3rem' }}>
-                      <span className="label-text">! LEAKED_CREDENTIAL</span>
-                    </div>
-                  </div>
+                <div className="badge badge--left">
+                  <span className="badge-icon">!</span>
+                  <span className="badge-text">LEAKED_CREDENTIAL</span>
+                </div>
 
-                  <div
-                    className="abs-center"
-                    style={{
-                      transform: `translate(calc(-50% + ${floatingElements.malware.x}px), calc(-50% + ${floatingElements.malware.y}px))`,
-                      transition: 'transform 0.05s linear',
-                    }}
-                  >
-                    <div className="label label--purple" style={{ right: '-11rem', top: '4rem' }}>
-                      <Lock className="icon-16 purple" />
-                      <span className="label-text">BLOCK_MALWARE</span>
-                    </div>
-                  </div>
+                <div className="badge badge--right">
+                  <span className="badge-icon">🔒</span>
+                  <span className="badge-text">BLOCK_MALWARE</span>
                 </div>
               </div>
             </div>
@@ -131,7 +125,7 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
                 <li className="rp-li"><span className="rp-bullet emerald">•</span><span className="rp-li-text">AI engine correlates dark-web chatter with OSINT signals.</span></li>
                 <li className="rp-li"><span className="rp-bullet emerald">•</span><span className="rp-li-text">Outputs verified, high-priority exposures—not noise.</span></li>
               </ul>
-              <div className="rp-terminal"><div className="rp-terminal-text">&gt; scan_target: enterprise_assets<br />&gt; found: 3 misconfigured_buckets<br />&gt; correlation: HIGH_CONFIDENCE</div></div>
+              <div className="rp-terminal"><div className="rp-terminal-text text-brand-400/70">&gt; scan_target: enterprise_assets<br />&gt; found: 3 misconfigured_buckets<br />&gt; correlation: HIGH_CONFIDENCE</div></div>
             </div>
 
             <div className="rp-card group rp-card--purple">
@@ -146,8 +140,14 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
               </ul>
               <div className="rp-badge">
                 <div className="rp-alert">
-                  <div className="rp-alert-icon"><Shield className="icon-12 red" /></div>
-                  <span className="rp-alert-text red">Phishing Blocked</span>
+                  <div className="rp-alert-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgb(248,113,113)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 2l7 4v6c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V6l7-4z" />
+                      <path d="M12 9v4" />
+                      <path d="M12 17h.01" />
+                    </svg>
+                  </div>
+                  <span className="rp-alert-text text-red-400">Phishing Blocked</span>
                 </div>
               </div>
             </div>
@@ -180,22 +180,20 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
           <div className="center-row"><div className="pill">PROPRIETARY PIPELINE</div></div>
           <h3 className="resources-h3">Threat Flow & AI Engine</h3>
           <div className="pipeline">
-            <div className="pipeline-item group">
-              <div className="pipeline-iconbox"><Database className="icon-24 slate300" /></div>
+              <div className="pipeline-item group">
+              <div className="pipeline-iconbox"><Database className="icon-52 slate300" /></div>
               <div className="pipeline-title">1. Ingest</div>
               <div className="pipeline-sub">Ingests billions of signals (Dark Web, OSINT) + browser-layer telemetry.</div>
             </div>
             <ChevronRight className="icon-24 slate600" />
-            <div className="pipeline-item group">
-              <div className="pipeline-circle">
-                <div className="pipeline-inner"><Brain className="icon-24 brand300" /></div>
-              </div>
+              <div className="pipeline-item group">
+                <div className="pipeline-circle"><Brain className="icon-44 brand300" /></div>
               <div className="pipeline-title">2. Analyze</div>
               <div className="pipeline-sub">Behavioral AI classifies exposures and predicts exploitability in real-time.</div>
             </div>
             <ChevronRight className="icon-24 slate600" />
-            <div className="pipeline-item group">
-              <div className="pipeline-iconbox"><Zap className="icon-24 slate300" /></div>
+              <div className="pipeline-item group">
+              <div className="pipeline-iconbox"><Zap className="icon-52 slate300" /></div>
               <div className="pipeline-title">3. Remediate</div>
               <div className="pipeline-sub">Automated takedowns, blocked sessions, revoked tokens, and SIEM alerts.</div>
             </div>
@@ -239,7 +237,7 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
           </div>
           <div className="integrated-title">Seamlessly integrated with</div>
           <div className="integrated-logos">
-            {['Splunk', 'Okta', 'RootpingBDR', 'ServiceNow', 'CrowdStrike'].map((v) => (
+            {['Splunk', 'Okta', 'Sentinel', 'ServiceNow', 'CrowdStrike'].map((v) => (
               <span key={v} className="integrated-logo">{v}</span>
             ))}
           </div>
@@ -252,11 +250,11 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
           <div className="why-grid">
             <div className="why-left">
               <div className="why-item-title">Zero Noise, High Precision</div>
-              <div className="why-item-sub">AI-based multi-stage validation eliminates false positives across both the attack surface and the browser.</div>
+              <div className="why-item-sub">AI-based multi-stage validation eliminates false positives across both the <br />attack surface and the browser.</div>
               <div className="why-item-title">Instant Time-to-Value</div>
-              <div className="why-item-sub">Cloud-native. No agents on servers. No hardware. No browser replacement required.</div>
+              <div className="why-item-sub">Cloud-native. No agents on servers. No hardware. No browser <br />replacement required.</div>
               <div className="why-item-title">Global Intelligence Network</div>
-              <div className="why-item-sub">Real-time monitoring of dark-web forums, ransomware leak sites, and emerging AI-tool abuse patterns.</div>
+              <div className="why-item-sub">Real-time monitoring of dark-web forums, ransomware leak sites, and <br />emerging AI-tool abuse patterns.</div>
             </div>
             <div className="why-stats-grid">
               <div className="stats-col">
@@ -307,7 +305,10 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
             ].map((t) => (
               <div key={t.q} className="trusted-card">
                 <div className="trusted-quote">“{t.q}”</div>
-                <div className="trusted-name">{t.n}</div>
+                <div className="trusted-name" style={{display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
+                  <div className="trusted-role-icon"></div>
+                  {t.n}
+                </div>
                 <div className="trusted-role">{t.r}</div>
               </div>
             ))}

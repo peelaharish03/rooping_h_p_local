@@ -1,6 +1,6 @@
 import React from 'react';
 import { Activity, BarChart3, Lock, Terminal, AlertTriangle, Check, Globe } from 'lucide-react';
-import styles from './SentinelOverview.module.css';
+import * as styles from './SentinelOverview.module.css';
 
 export default function SentinelOverview() {
   return (
@@ -17,8 +17,8 @@ export default function SentinelOverview() {
         </div>
         <div className={styles.layout}>
           <div className={styles.sidebar}>
-            <div className={styles.sbItem}><Activity size={16} /></div>
-            <div className={styles.sbItem}><BarChart3 size={16} /></div>
+            <div className={`${styles.sbItem} ${styles.sbItemTeal}`}><Activity size={16} /></div>
+            <div className={`${styles.sbItem} ${styles.sbItemTeal}`}><BarChart3 size={16} /></div>
             <div className={styles.sbItem}><Lock size={16} /></div>
             <div className={styles.sbItem}><Terminal size={16} /></div>
           </div>
@@ -44,11 +44,11 @@ export default function SentinelOverview() {
                 </div>
                 <div className={styles.thList}>
                   <div className={styles.thItem}>
-                    <div className={`${styles.thBadge} ${styles.thBadgeRed}`}><AlertTriangle size={14} /> ALERTED</div>
+                    <div className={`${styles.thBadge} ${styles.thBadgeRed}`}>ALERTED</div>
                     <div className={styles.thSub}>CRITICAL: Password Reuse Detected. Same password used on pixr.com</div>
                   </div>
                   <div className={styles.thItem}>
-                    <div className={`${styles.thBadge} ${styles.thBadgeAmber}`}><AlertTriangle size={14} /> ALERTED</div>
+                    <div className={`${styles.thBadge} ${styles.thBadgeAmber}`}>ALERTED</div>
                     <div className={styles.thSub}>CRITICAL: Password Reuse Detected. Same password used on plx.com</div>
                   </div>
                 </div>
