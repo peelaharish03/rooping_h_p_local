@@ -38,7 +38,7 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
           </div>
           <h1 className="resources-title">
             <span className="resources-line">See Every <span className="resources-gradient-1">Exposure.</span></span>
-            <span className="resources-line">Secure Every <span className="resources-gradient-2">Click.</span></span>
+            <span className="resources-line">Secure Every <span className="click-gradient">Click</span>.</span>
           </h1>
           <p className="resources-sub">
             A unified security platform that protects your entire digital footprint and

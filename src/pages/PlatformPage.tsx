@@ -73,7 +73,7 @@ export default function PlatformPage({ onNavigate, onOpenDemo }: PlatformPagePro
           <div className="center"><div className="pill"><span className="dot"></span>SENTINELWEB ENGINE V2.8.0</div></div>
           <h1 className="platform-heading">
             <span className="platform-heading-line md:text-7xl">One Platform.</span>
-            <span className="platform-gradient-text md:text-7xl">Total <span style={{color: 'rgb(45 212 191 / var(--tw-text-opacity, 1))'}}>Visibility.</span></span>
+            <span className="platform-gradient-text md:text-7xl">Total Visibility.</span>
           </h1>
           <p className="platform-sub">
             From the dark web to the browser tab, RootPing unifies exposure management and endpoint security into a single, intelligent nerve center.
