@@ -70,7 +70,7 @@ export default function DemoModal({ open, onClose }: DemoModalProps) {
               </select>
             </div>
             <label className="demo-consent">
-              <input type="checkbox" defaultChecked className="demo-checkbox" />
+              <input type="checkbox" className="demo-checkbox" />
               <span>
                 I accept the RootPing <a href="#" className="demo-link">Terms of Service</a> and <a href="#" className="demo-link">Privacy Policy</a>.
               </span>

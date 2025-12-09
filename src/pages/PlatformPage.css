@@ -3,13 +3,20 @@
 .container { max-width: 80rem; margin-left: auto; margin-right: auto; padding-left: 1.5rem; padding-right: 1.5rem; }
 .center { text-align: center; }
 .pill { display: inline-flex; align-items: center; padding: 0.25rem 1rem; border-radius: 9999px; background: #0f1a2e; font-size: 0.75rem; color: #2dd4bf; border: 1px solid rgba(255,255,255,0.1); }
-.dot { width: 0.5rem; height: 0.5rem; border-radius: 9999px; background: #22c55e; display: inline-block; margin-right: 0.25rem; animation: blink 1s ease-in-out infinite; }
+.dot { width: 0.5rem; height: 0.5rem; border-radius: 9999px; background-color: rgb(45 212 191 / var(--tw-bg-opacity, 1));; display: inline-block; margin-right: 0.25rem; animation: blink 1s ease-in-out infinite; }
 @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
 .platform-heading { font-weight: 800; line-height: 1.1; font-size: 3rem; text-align: center; white-space: nowrap; letter-spacing: -0.02em; }
 @media (min-width: 768px) { .platform-heading { font-size: 4.5rem; } }
 @media (min-width: 768px) { .md\:text-7xl { font-size: 4.5rem; line-height: 1; } }
 .platform-heading-line { display: block; color: #ffffff; }
-.platform-gradient-text { background-image: linear-gradient(to right, #2dd4bf, #5eead4, #7c3aed); -webkit-background-clip: text; background-clip: text; color: transparent; display: block; }
+.platform-gradient-text {
+  background-image: linear-gradient(to right, #2dd4bf 0%, #4A91F7 50%, #8B5CFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: block;
+}
 .platform-sub { margin-top: 1rem; text-align: center; font-size: 1.125rem; line-height: 1.6; max-width: 48rem; margin-left: auto; margin-right: auto; color: #94a3b8; margin-bottom: 4rem; }
 
 .intro-grid { margin-top: 2rem; display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center; }
@@ -154,3 +161,24 @@
   .sign-in-btn { width: 100%; max-width: 260px; }
   .abd-left { text-align: center; }
 }
+/* .pk{ */
+  /* background-color:white; */
+  /* width: 170px; */
+  /* height: 40px; */
+  /* font-size: 14px; */
+  /* font-weight: 600; */
+  /* border-radius: 8px; */
+  /* font-color: #000; */
+/* background-color: #020617; */
+  /* font-family: "Inter", sans-serif; */
+  
+/* } */
+/* .gp{ */
+/* width: 170px; */
+  /* height: 40px; */
+  /* font-size: 14px; */
+  /* font-weight: 600; */
+  /* border-radius: 8px; */
+  /* background-color: #000; */
+/* } */
+
