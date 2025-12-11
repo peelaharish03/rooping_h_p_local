@@ -52,7 +52,9 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
               Request Demo
               <ArrowRight className="icon-16 dark ml-2" />
             </button>
-            <button onClick={onOpenDemo} className="resources-trial">Start Free Trial</button>
+            <button onClick={onOpenDemo} className="resources-trial">
+              Start Free Trial
+            </button>
           </div>
           <div className="resources-showcase">
             <div className="security-visual-wrap">
@@ -74,7 +76,7 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
                   <div className="center-circle">
                     <svg
                       className="globe-svg"
-                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns=""
                       viewBox="0 0 40 40"
                       aria-hidden="true"
                     >
@@ -85,7 +87,7 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
                       <line x1="20" y1="8" x2="20" y2="32" />
                     </svg>
                   </div>
-                  
+
                 </div>
 
                 <div className="badge badge--left">
@@ -141,7 +143,7 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
               <div className="rp-badge">
                 <div className="rp-alert">
                   <div className="rp-alert-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgb(248,113,113)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg xmlns="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgb(248,113,113)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M12 2l7 4v6c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V6l7-4z" />
                       <path d="M12 9v4" />
                       <path d="M12 17h.01" />
@@ -180,19 +182,19 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
           <div className="center-row"><div className="pill">PROPRIETARY PIPELINE</div></div>
           <h3 className="resources-h3">Threat Flow & AI Engine</h3>
           <div className="pipeline">
-              <div className="pipeline-item group">
+            <div className="pipeline-item group">
               <div className="pipeline-iconbox"><Database className="icon-52 slate300" /></div>
               <div className="pipeline-title">1. Ingest</div>
               <div className="pipeline-sub">Ingests billions of signals (Dark Web, OSINT) + browser-layer telemetry.</div>
             </div>
             <ChevronRight className="icon-24 slate600" />
-              <div className="pipeline-item group">
-                <div className="pipeline-circle"><Brain className="icon-44 brand300" /></div>
+            <div className="pipeline-item group">
+              <div className="pipeline-circle"><Brain className="icon-44 brand300" /></div>
               <div className="pipeline-title">2. Analyze</div>
               <div className="pipeline-sub">Behavioral AI classifies exposures and predicts exploitability in real-time.</div>
             </div>
             <ChevronRight className="icon-24 slate600" />
-              <div className="pipeline-item group">
+            <div className="pipeline-item group">
               <div className="pipeline-iconbox"><Zap className="icon-52 slate300" /></div>
               <div className="pipeline-title">3. Remediate</div>
               <div className="pipeline-sub">Automated takedowns, blocked sessions, revoked tokens, and SIEM alerts.</div>
@@ -305,7 +307,7 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
             ].map((t) => (
               <div key={t.q} className="trusted-card">
                 <div className="trusted-quote">“{t.q}”</div>
-                <div className="trusted-name" style={{display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
+                <div className="trusted-name" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   <div className="trusted-role-icon"></div>
                   {t.n}
                 </div>
