@@ -52,10 +52,13 @@ export default function CompanyPage({ onNavigate, onOpenDemo }: CompanyPageProps
               <h2 className="mission-title">Our Mission</h2>
               <div className="mission-text">
                 <p>
-                  Founded with the mission to simplify and strengthen enterprise security, Rootping combines advanced threat intelligence, secure browser controls, and real-time exposure monitoring to protect every session, every user, and every asset.
+                  Founded with the mission to simplify and strengthen enterprise security, Rootping<br />
+                  combines advanced threat intelligence, secure browser controls, and real-time exposure<br />
+                  monitoring to protect every session, every user, and every asset.
                 </p>
                 <p>
-                  Whether you're reducing browser threats, securing cloud access, or tightening compliance — Rootping provides the protection and visibility you need.
+                  Whether you're reducing browser threats, securing cloud access, or tightening<br />
+                  compliance — Rootping provides the protection and visibility you need.
                 </p>
               </div>
             </div>
