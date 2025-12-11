@@ -1,5 +1,5 @@
-.navbar { position: fixed; top: 0; width: 100%; z-index: 50; transition: background-color 200ms ease, backdrop-filter 200ms ease, border-color 200ms ease; background: rgba(11, 17, 33, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
-.navbar--scrolled { background: rgba(11, 17, 33, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+.navbar { position: fixed; top: 0; width: 100%; z-index: 50; transition: background-color 200ms ease, backdrop-filter 200ms ease, border-color 200ms ease; background: rgba(11, 17, 33, 0.8); backdrop-filter: blur(12px);  }
+.navbar--scrolled { background: rgba(4, 5, 5, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
 .navbar-container { max-width: 80rem; margin-left: auto; margin-right: auto; padding-left: 1.5rem; padding-right: 1.5rem; }
 .navbar-row { display: flex; align-items: center; justify-content: space-between; height: 4.5rem; }
 .brand { display: flex; align-items: center; gap: 0.5rem; cursor: pointer; }
@@ -11,8 +11,8 @@
 .icon-12 { width: 12px; height: 12px; }
 .nav-links { display: none; align-items: center; gap: 1.75rem; }
 @media (min-width: 768px) { .nav-links { display: flex; } }
-.nav-link { font-size: 0.875rem; color: #94a3b8; transition: color 200ms ease; background: transparent; border: 0; padding: 0; cursor: pointer; }
-.nav-link:hover { color: #ffffff; }
+.nav-link { font-size: 0.875rem; color: #c0c2c4; transition: color 200ms ease; background: transparent; border: 0; padding: 0; cursor: pointer; font-size: 15px; font-weight: bold; }
+.nav-link:hover { color: #fbf9fb; font-weight: bold; }
 .nav-actions { display: none; align-items: center; gap: 1rem; }
 @media (min-width: 768px) { .nav-actions { display: flex; } }
 .login-group { position: relative; }
