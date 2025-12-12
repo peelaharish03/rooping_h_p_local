@@ -14,8 +14,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent;
-  display: block;
+  font-weight: 800;
 }
 .platform-sub { margin-top: 1.5rem; text-align: center; font-size: 1.125rem; line-height: 1.6; max-width: 48rem; margin-left: auto; margin-right: auto; color: #94a3b8; margin-bottom: 8rem; }
 
@@ -118,6 +117,17 @@
 .abd-note { text-align: center; font-size: 11px; color: #8C8FA3; }
 
 .platform-container { background-color: #0a0e1a; min-height: 100vh; padding: 60px 20px; }
+.platform-gradient-text {
+  background: linear-gradient(90deg,
+    #2dd4bf 0%,     /* greenish teal */
+    #62b0e8 50%,    /* light blue */
+    #8b5cf6 100%    /* purple */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800; /* optional, matches your screenshot */
+}
 
 .capabilities-section { max-width: 1280px; margin: 0 auto 80px; }
 .capabilities-title { color: #ffffff; font-size: 1.875rem; line-height: 2.25rem; font-weight: 700; text-align: center; margin-bottom: 80px; letter-spacing: -0.5px; }
@@ -139,7 +149,6 @@
 .btn-primary:hover { background-color: #f1f5f9; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2); }
 .btn-secondary { background-color: transparent; color: #ffffff; border: 2px solid rgba(255, 255, 255, 0.3); }
 .btn-secondary:hover { background-color: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.5); transform: translateY(-2px); }
-
 @media (max-width: 1200px) {
   .capabilities-grid { grid-template-columns: 1fr; max-width: 600px; }
   .cta-card { padding: 60px 40px; }
