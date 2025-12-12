@@ -97,27 +97,27 @@ export default function CompanyPage({ onNavigate, onOpenDemo }: CompanyPageProps
               },
               {
                 t: 'Purpose-Built for the Modern Workforce',
-                s: 'Security solutions built for distributed teams, cloud-first infrastructures, and browser-centric workflows.',
+                s: 'Rootping delivers tailored security solutions built for distributed teams, cloud-first infrastructures, and browser-centric workflows.',
               },
               {
                 t: 'Proactive, Real-Time Protection',
-                s: 'Continuous monitoring, session analysis, secure browser enforcement, and automated remediation to stop threats before they impact your business.',
+                s: 'We combine continuous monitoring, session analysis, secure browser enforcement, and automated remediation to stop threats before they impact your business..',
               },
               {
                 t: 'Transparent, Reliable, and Trusted',
-                s: 'Clear communication, ethical operations, and dependable service — ensuring your business stays protected with confidence.',
+                s: 'We prioritize clear communication, ethical operations, and dependable service — ensuring your business stays protected with confidence..',
               },
-              {
+               {
                 t: 'Driven by Excellence',
-                s: 'Relentless focus on customer success with reliable performance and scalable security.',
-              },
+                s: 'Relentless focus on customer success with reliable performance and scalable securityRootping is committed to delivering reliable and scalable security with precision, performance, and a relentless focus on customer success...',
+               },
               {
                 t: 'Trusted Technology Partnerships',
-                s: 'We work with leading vendors to deliver resilient, scalable, and enterprise-ready protection.',
+                s: 'We work with leading cloud, browser, and security vendors to deliver resilient, scalable, and enterprise-ready protection..',
               },
             ].map((c) => (
               <div key={c.t} className="feature-card">
-                <div className="feature-title">{c.t}</div>
+                <div className="feature-titles">{c.t}</div>
                 <div className="feature-sub">{c.s}</div>
               </div>
             ))}

@@ -14,7 +14,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-weight: 800;
+  color: transparent;
+  display: block;
 }
 .platform-sub { margin-top: 1.5rem; text-align: center; font-size: 1.125rem; line-height: 1.6; max-width: 48rem; margin-left: auto; margin-right: auto; color: #94a3b8; margin-bottom: 8rem; }
 
@@ -50,7 +51,7 @@
 .status-dot { width: 0.5rem; height: 0.5rem; border-radius: 9999px; background: #22c55e; display: inline-block; }
 
 .metrics-grid { margin-top: 1rem; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; }
-.metric-card { border-radius: 0.75rem; background: rgba(11, 17, 33, 0.8); border: 1px solid rgba(255,255,255,0.1); padding: 0.75rem; }
+.metric-card { border-radius: 0.75rem; background: rgb(30 41 59 / 1); border: 1px solid rgb(51 65 85 / 1); padding: 0.75rem; }
 .metric-title { font-size: 0.75rem; color: #94a3b8; }
 .metric-value { font-size: 1.5rem; font-weight: 600; color: #ffffff; }
 
@@ -106,28 +107,17 @@
 .abd-console-icon { width: 3rem; height: 3rem; border-radius: 0.75rem; margin-left: auto; margin-right: auto; background: rgba(157,78,221,0.16); border: 1px solid rgba(157,78,221,0.35); display: flex; align-items: center; justify-content: center; color: #9D4EDD; }
 .abd-console-title { margin-top: 0.5rem; font-size: 1.5rem; line-height: 2rem; font-weight: 700; color: #ffffff; text-align: center; margin-bottom: 0; }
 .abd-console-sub { font-size: 0.75rem; color: #94a3b8; text-align: center; margin-top: 0.25rem; }
-.abd-form { margin-top: 2rem; display: grid; gap:1rem 0.75rem; justify-items: center; }
-.abd-label { font-size: 0.75rem; color: #94a3b8; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+.abd-form { margin-top: 2rem; display: grid; gap: 1.5rem; justify-items: center; }
+.abd-label { display: block; font-size: 0.75rem; color: #94a3b8; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
 .abd-input-wrap { position: relative; width: 300px; }
-.abd-input-icon { position: absolute; left: 0.75rem; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: #94a3b8; }
-.abd-input { width: 100%; height: 2.3rem; font-size: 0.775rem; border-radius: 0.5rem; background: #0b1121; border: 1px solid rgba(255,255,255,0.12); padding-left: 1.7rem; padding-right: 0.75rem; color: #cbd5e1; box-sizing: border-box; }
+.abd-input-icon { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: #94a3b8; }
+.abd-input { width: 100%; height: 2.5rem; font-size: 0.875rem; border-radius: 0.5rem; background: #0b1121; border: 1px solid rgba(255,255,255,0.12); padding-left: 3rem; padding-right: 0.75rem; color: #cbd5e1; box-sizing: border-box; }
 .abd-input:focus { outline: none; border-color: rgba(157,78,221,0.45); box-shadow: 0 0 0 3px rgba(157,78,221,0.15); }
 .sign-in-btn { width: 300px; height: 2.5rem; font-size: 0.875rem; border-radius: 0.5rem; background: #9D4EDD; color: #ffffff; font-weight: 600; box-shadow: 0 0 24px rgba(157,78,221,0.35); border: 1px solid rgba(157,78,221,0.5); display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box; }
 .sign-in-btn:hover { box-shadow: 0 0 30px rgba(157,78,221,0.45); }
 .abd-note { text-align: center; font-size: 11px; color: #8C8FA3; }
 
 .platform-container { background-color: #0a0e1a; min-height: 100vh; padding: 60px 20px; }
-.platform-gradient-text {
-  background: linear-gradient(90deg,
-    #2dd4bf 0%,     /* greenish teal */
-    #62b0e8 50%,    /* light blue */
-    #8b5cf6 100%    /* purple */
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  font-weight: 800; /* optional, matches your screenshot */
-}
 
 .capabilities-section { max-width: 1280px; margin: 0 auto 80px; }
 .capabilities-title { color: #ffffff; font-size: 1.875rem; line-height: 2.25rem; font-weight: 700; text-align: center; margin-bottom: 80px; letter-spacing: -0.5px; }
@@ -149,6 +139,7 @@
 .btn-primary:hover { background-color: #f1f5f9; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2); }
 .btn-secondary { background-color: transparent; color: #ffffff; border: 2px solid rgba(255, 255, 255, 0.3); }
 .btn-secondary:hover { background-color: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.5); transform: translateY(-2px); }
+
 @media (max-width: 1200px) {
   .capabilities-grid { grid-template-columns: 1fr; max-width: 600px; }
   .cta-card { padding: 60px 40px; }

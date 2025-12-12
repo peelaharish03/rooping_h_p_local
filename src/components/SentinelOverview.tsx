@@ -95,10 +95,10 @@ export default function SentinelOverview() {
           Most breaches start on the outside. We continuously map your entire digital footprint—cloud assets, leaked credentials, and shadow IT—correlating billions of signals to find the one weakness that matters.
         </p>
           <div className={styles.bullets}>
-          <div className={styles.bullet}><span className={styles.check}><Check size={12} /></span><span className={styles.bulletText}>Real-time correlation of Dark Web & OSINT signals</span></div>
-          <div className={styles.bullet}><span className={styles.check}><Check size={12} /></span><span className={styles.bulletText}>Automated discovery of shadow cloud buckets & APIs</span></div>
-          <div className={styles.bullet}><span className={styles.check}><Check size={12} /></span><span className={styles.bulletText}>Zero-noise verification engine eliminates false positives</span></div>
-          <div className={styles.bullet}><span className={styles.check}><Check size={12} /></span><span className={styles.bulletText}>Instant alerts for leaked employee credentials</span></div>
+          <div className={styles.bullet}><svg className="text-teal-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(45, 212, 191)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span className={styles.bulletText}>Real-time correlation of Dark Web & OSINT signals</span></div>
+          <div className={styles.bullet}><svg className="text-teal-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(45, 212, 191)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span className={styles.bulletText}>Automated discovery of shadow cloud buckets & APIs</span></div>
+          <div className={styles.bullet}><svg className="text-teal-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(45, 212, 191)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span className={styles.bulletText}>Zero-noise verification engine eliminates false positives</span></div>
+          <div className={styles.bullet}><svg className="text-teal-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(45, 212, 191)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span className={styles.bulletText}>Instant alerts for leaked employee credentials</span></div>
         </div>
       </div>
     </div>

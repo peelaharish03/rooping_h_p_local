@@ -155,20 +155,20 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
             </div>
           </div>
 
-          <div className="agent-card">
+          <div className="agent-cards">
             <div className="agent-row">
               <div>
-                <h2 className="agent-title">One Agent. Total Coverage.</h2>
+                <h2 className="agent-titles">One Agent. Total Coverage.</h2>
                 <p className="agent-sub">Lightweight agent for managed, BYOD, and VDI endpoints.</p>
               </div>
               <div className="agent-metrics">
                 <div className="agent-metric">
-                  <div className="agent-value">100%</div>
+                  <div className="agent-values">100%</div>
                   <div className="agent-label">Browser Agnostic</div>
                 </div>
                 <div className="agent-sep"></div>
                 <div className="agent-metric">
-                  <div className="agent-value">&lt;10ms</div>
+                  <div className="agent-values">&lt;10ms</div>
                   <div className="agent-label">Latency</div>
                 </div>
               </div>

@@ -100,7 +100,7 @@ export default function PlatformPage({ onNavigate, onOpenDemo }: PlatformPagePro
                 'Full session audit trails & screen capture protection',
               ].map((item) => (
                 <div key={item} className="abd-item">
-                  <CheckCircle2 className="icon-24 accent" />
+                  <svg className="icon-24" style={{ color: 'rgb(139, 92, 246)' }} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                   <span className="abd-item-text">{item}</span>
                 </div>
               ))}
