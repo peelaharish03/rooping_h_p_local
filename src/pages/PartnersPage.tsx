@@ -27,7 +27,7 @@ export default function PartnersPage({ onNavigate, onOpenDemo }: PartnersPagePro
         <div className="partners-container partners-grid">
           <div>
             <h2 className="partners-h2">Why Partner With Us?</h2>
-            <div className="partners-features">
+            <div className="partners-featuress">
               <div className="partners-feature">
                 <div className="feature-icon feature-icon--emerald">
                   <svg className="feature-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -39,7 +39,7 @@ export default function PartnersPage({ onNavigate, onOpenDemo }: PartnersPagePro
                   </svg>
                 </div>
                 <div>
-                  <div className="feature-title">High-Margin Opportunities</div>
+                  <div className="feature-new">High-Margin Opportunities</div>
                   <div className="feature-sub">Competitive margins and recurring revenue streams for MSPs and <br />resellers.</div>
                 </div>
               </div>
@@ -53,7 +53,7 @@ export default function PartnersPage({ onNavigate, onOpenDemo }: PartnersPagePro
                   </svg>
                 </div>
                 <div>
-                  <div className="feature-title">Co-Marketing & Support</div>
+                  <div className="feature-new">Co-Marketing & Support</div>
                   <div className="feature-sub">Access to white-labeled collateral, sales training, and dedicated <br />partner managers.</div>
                 </div>
               </div>
@@ -68,7 +68,7 @@ export default function PartnersPage({ onNavigate, onOpenDemo }: PartnersPagePro
                   </svg>
                 </div>
                 <div>
-                  <div className="feature-title">Enterprise-Grade Tech</div>
+                  <div className="feature-new">Enterprise-Grade Tech</div>
                   <div className="feature-sub">Offer the only platform that combines attack surface <br />management with browser security.</div>
                 </div>
               </div>
