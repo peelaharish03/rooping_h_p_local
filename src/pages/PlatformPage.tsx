@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Shield, CheckCircle, Lock, ChevronRight, Activity, BarChart3, AlertTriangle, Eye, Zap, FileText, FileWarning, CheckCircle2, Fingerprint, Globe, Server, Terminal } from 'lucide-react';
+import { Shield, CheckCircle, Lock, ChevronRight, Activity, BarChart3, AlertTriangle, Eye, Zap, FileText, FileWarning, CheckCircle2, Fingerprint, Globe, Server, Terminal, FileCheck } from 'lucide-react';
 import SentinelOverview from '../components/SentinelOverview';
 import Footer from '../components/Footer';
 import './PlatformPage.css';
@@ -162,7 +162,7 @@ export default function PlatformPage({ onNavigate, onOpenDemo }: PlatformPagePro
             </div>
             <div className="capability-card">
               <div className="capability-icon">
-                <FileText size={32} strokeWidth={2} />
+                <FileCheck size={32} strokeWidth={2} />
               </div>
               <h3 className="capability-heading">Compliance Reporting</h3>
               <p className="capability-description">
