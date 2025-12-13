@@ -156,10 +156,12 @@
 @media (max-width: 640px) {
   .platform-heading { font-size: 2.25rem; white-space: normal; }
   .platform-sub { font-size: 1rem; padding-bottom: 1.5rem; max-width: 22rem; }
-  .abd-console { width: 100%; max-width: 320px; height: auto; margin-left: 0; padding: 1rem; }
-  .abd-input-wrap { width: 100%; max-width: 260px; }
-  .sign-in-btn { width: 100%; max-width: 260px; }
+  .abd-console-wrap { display: flex; justify-content: center; width: 100%; }
+  .abd-console { width: 100%; max-width: 320px; height: auto; padding: 1rem; margin: 0 auto; margin-left: auto; }
+  .abd-input-wrap { width: 100%; max-width: 100%; }
+  .sign-in-btn { width: 100%; max-width: 100%; }
   .abd-left { text-align: center; }
+  .abd-label { text-align: center; }
 }
 /* .pk{ */
   /* background-color:white; */

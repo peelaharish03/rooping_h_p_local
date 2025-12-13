@@ -125,22 +125,21 @@ export default function SolutionsPage({ onNavigate, onOpenDemo }: SolutionsPageP
             </div>
           </div>
 
-          <div className="asm-card">
-            <div className="asm-head">
-              <h3 className="asm-title">ATTACK SURFACE MAP</h3>
-              <div className="asm-dots"><span className="dot gray"></span><span className="dot gray"></span></div>
-            </div>
-            <div className="asm-body">
-              <div className="asm-svg-wrap">
-                <svg className="asm-svg" viewBox="0 0 540 200">
-                  <circle cx="270" cy="100" r="80" fill="none" stroke="rgba(139, 92, 246, 0.2)" strokeWidth="1" />
-                  <circle cx="270" cy="100" r="120" fill="none" stroke="rgba(139, 92, 246, 0.1)" strokeWidth="1" />
-                  <line x1="270" y1="100" x2="390" y2="60" stroke="rgba(139, 92, 246, 0.3)" strokeWidth="1" />
-                  <line x1="270" y1="100" x2="180" y2="150" stroke="rgba(139, 92, 246, 0.3)" strokeWidth="1" />
-                </svg>
+          <div className="easm-card">
+            <div className="card-header">
+              ATTACK SURFACE MAP
+              <div className="header-dots">
+                <span></span>
+                <span></span>
               </div>
-              <div className="asm-badge asm-badge--pink" style={{ top: '2rem', right: '3rem' }}>Leaked API Key</div>
-              <div className="asm-badge asm-badge--amber" style={{ bottom: '2rem', left: '3rem' }}>Public S3 Bucket</div>
+            </div>
+
+            {/* rotating paths */}
+            <div className="orbit orbit-1"></div>
+            <div className="orbit orbit-2"></div>
+
+            {/* center icon */}
+            <div className="center-node">
               <div className="asm-core">
                 <div className="asm-screen">
                   <div className="asm-bar asm-bar--top"></div>
@@ -148,6 +147,10 @@ export default function SolutionsPage({ onNavigate, onOpenDemo }: SolutionsPageP
                 </div>
               </div>
             </div>
+
+            {/* labels */}
+            <div className="label label-red">Leaked API Key</div>
+            <div className="label label-yellow">Public S3 Bucket</div>
           </div>
         </div>
       </section>
