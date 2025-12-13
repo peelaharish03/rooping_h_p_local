@@ -89,7 +89,7 @@ export default function CompanyPage({ onNavigate, onOpenDemo }: CompanyPageProps
       <section className="company-section">
         <div className="company-container">
           <h4 className="company-subtitle">Why Choose Rootping?</h4>
-          <div className="features-grid">
+          <div className="features-grids">
             {[
               {
                 t: 'Deep Expertise in Exposure Threat Management',
@@ -109,14 +109,14 @@ export default function CompanyPage({ onNavigate, onOpenDemo }: CompanyPageProps
               },
                {
                 t: 'Driven by Excellence',
-                s: 'Relentless focus on customer success with reliable performance and scalable securityRootping is committed to delivering reliable and scalable security with precision, performance, and a relentless focus on customer success...',
+                s: 'Rootping is committed to delivering reliable and scalable security with precision, performance, and a relentless focus on customer success....',
                },
               {
                 t: 'Trusted Technology Partnerships',
                 s: 'We work with leading cloud, browser, and security vendors to deliver resilient, scalable, and enterprise-ready protection..',
               },
             ].map((c) => (
-              <div key={c.t} className="feature-card">
+              <div key={c.t} className="feature-cards">
                 <div className="feature-titles">{c.t}</div>
                 <div className="feature-sub">{c.s}</div>
               </div>
