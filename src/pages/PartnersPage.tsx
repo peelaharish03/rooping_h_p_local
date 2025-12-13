@@ -29,8 +29,8 @@ export default function PartnersPage({ onNavigate, onOpenDemo }: PartnersPagePro
             <h2 className="partners-h2">Why Partner With Us?</h2>
             <div className="partners-featuress">
               <div className="partners-feature">
-                <div className="feature-icon feature-icon--emerald">
-                  <svg className="feature-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <div className="feature-icon feature-icon--emerald" style={{ border: 'none', boxShadow: 'none' }}>
+                  <svg className="feature-svg" style={{ color: 'rgb(45 212 191 / var(--tw-text-opacity, 1))' }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="m11 17 2 2a1 1 0 1 0 3-3" />
                     <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
                     <path d="m21 3 1 11h-2" />
@@ -40,12 +40,12 @@ export default function PartnersPage({ onNavigate, onOpenDemo }: PartnersPagePro
                 </div>
                 <div>
                   <div className="feature-new">High-Margin Opportunities</div>
-                  <div className="feature-sub">Competitive margins and recurring revenue streams for MSPs and <br />resellers.</div>
+                  <div className="feature-sub mt-4">Competitive margins and recurring revenue streams for MSPs and <br />resellers.</div>
                 </div>
               </div>
               <div className="partners-feature">
-                <div className="feature-icon feature-icon--purple">
-                  <svg className="feature-svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <div className="feature-icon feature-icon--purple" style={{ border: 'none', boxShadow: 'none' }}>
+                  <svg className="feature-svg" style={{ color: 'rgb(139 92 246 / var(--tw-text-opacity, 1))' }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
                     <path d="M16 3.128a4 4 0 0 1 0 7.744" />
                     <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
@@ -54,12 +54,12 @@ export default function PartnersPage({ onNavigate, onOpenDemo }: PartnersPagePro
                 </div>
                 <div>
                   <div className="feature-new">Co-Marketing & Support</div>
-                  <div className="feature-sub">Access to white-labeled collateral, sales training, and dedicated <br />partner managers.</div>
+                  <div className="feature-sub mt-4">Access to white-labeled collateral, sales training, and dedicated <br />partner managers.</div>
                 </div>
               </div>
               <div className="partners-feature">
-                <div className="feature-icon feature-icon--blue">
-                  <svg className="feature-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <div className="feature-icon feature-icon--blue" style={{ border: 'none', boxShadow: 'none' }}>
+                  <svg className="feature-svg" style={{ color: 'rgb(96 165 250 / var(--tw-text-opacity, 1))' }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M10 12h4" />
                     <path d="M10 8h4" />
                     <path d="M14 21v-3a2 2 0 0 0-4 0v3" />
@@ -69,7 +69,7 @@ export default function PartnersPage({ onNavigate, onOpenDemo }: PartnersPagePro
                 </div>
                 <div>
                   <div className="feature-new">Enterprise-Grade Tech</div>
-                  <div className="feature-sub">Offer the only platform that combines attack surface <br />management with browser security.</div>
+                  <div className="feature-sub mt-4">Offer the only platform that combines attack surface <br />management with browser security.</div>
                 </div>
               </div>
             </div>
@@ -91,7 +91,7 @@ export default function PartnersPage({ onNavigate, onOpenDemo }: PartnersPagePro
             </div>
           </div>
 
-          <div className="partner-form">
+          <div className="partner-form" style={{ minHeight: '600px', display: 'flex', flexDirection: 'column' }}>
             <div className="partner-form-title">Become a Partner</div>
             <div className="partner-form-sub">Fill out the form below and our channel team will reach out within 24 hours.</div>
             <form className="partner-form-body">

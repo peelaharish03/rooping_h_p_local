@@ -99,17 +99,24 @@
   }
 }
 
-.agent-card { max-width: 80rem; margin-left: auto; margin-right: auto; background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 0.75rem; padding: 1rem; margin-top: 3rem; }
-.agent-row { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1.5rem; }
+.resources-actions {
+  margin-top: 0.3rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.agent-cards { max-width: 80rem; margin-left: auto; margin-right: auto; background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 0.75rem; padding: .7rem; margin-top: 2rem; }
+.agent-row { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.5rem; }
 @media (min-width: 768px) {
   .agent-row { flex-direction: row; justify-content: space-between; text-align: left; gap: 0; }
 }
-.agent-title { font-size: 1.25rem; font-weight: 700; color: #ffffff; margin-bottom: 0.5rem; }
+.agent-titles { font-size: 1.25rem; font-weight: 700; color: #ffffff; margin-bottom: 0.5rem; }
 .agent-sub { color: #9ca3af; font-size: 0.875rem; }
 .agent-metrics { display: flex; align-items: center; gap: 2rem; }
 .agent-metric { text-align: center; }
 @media (min-width: 768px) { .agent-metric { text-align: right; } }
-.agent-value { font-size: 1.5rem; font-weight: 700; color: rgb(45,212,191); margin-bottom: 0.25rem; }
+.agent-values { font-size: 1.5rem; font-weight: 700; color: rgb(45,212,191); margin-bottom: 0.25rem; }
 .agent-label { font-size: 0.625rem; color: #64748b; text-transform: uppercase; letter-spacing: 0.08em; }
 .agent-sep { width: 1px; height: 2rem; background: rgba(255,255,255,0.1); }
 
@@ -216,7 +223,6 @@
   background: var(--white-trans-1);
   position: relative;
   overflow: hidden;
-  gap:3rem
 }
 
 .resources-trial:hover,
@@ -1101,7 +1107,7 @@
 .trusted-role { color: #64748b; font-size: 0.75rem; margin-left: 40px; }
 .trusted-role-icon { width: 32px; height: 32px; border-radius: 9999px; background-color: #475569; flex-shrink: 0; }
 
-.why-title { font-size: 2.25rem; line-height: 2.5rem; font-weight: 700; color: #ffffff; text-align: left; }
+.why-title { font-size: 2.25rem; line-height: 1.5rem; font-weight: 700; color: #ffffff; text-align: left; }
 @media (min-width: 768px) { .why-title { font-size: 2.25rem; } }
 .why-grid { margin-top: 0.75rem; display: grid; grid-template-columns: 1fr; gap: 2rem; }
 @media (min-width: 768px) { .why-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
@@ -1110,12 +1116,12 @@
 .why-item-sub { color: #94a3b8; font-size: 0.9375rem; }
 .why-stats-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .stats-col { display: flex; flex-direction: column; gap: 1rem; align-items: center; }
-SentinelWeb
-Enterprise Security Console.stats-col--offset { margin-top: 2.25rem; }
+.stats-col:first-child { margin-top: -5rem; }
+.stats-col--offset { margin-top: -3.8rem; }
 .stat-card { width: 260px; border-radius: 1rem; background: #0e1529; border: 1px solid rgba(255,255,255,0.1); padding: 1.25rem; display: flex; flex-direction: column;justify-items: baseline;}
 .stat-card--lg { height: 105px; }
-.stat-card--sm { height: 70px;; padding: 1,.2rem 1rem; display: flex; flex-direction: column;}
-.stat-card--sm .stat-value { font-size: 1.5rem; }
+.stat-card--sm { height: 120px; width: 300px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: center; }
+.stat-card--sm .stat-value { font-size: 2.25rem; }
 .stat-card--sm .stat-label { font-size: 0.75rem; }
 .stat-value { font-size: 1.875rem; font-weight: 700; color: #ffffff; }
 .stat-value.brand300 { color: rgb(45 212 191 / var(--tw-text-opacity, 1)); }
