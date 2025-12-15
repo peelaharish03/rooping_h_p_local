@@ -68,5 +68,7 @@
 .contact-card:hover .contact-link { background: rgba(45,212,191,0.2); border-color: rgba(45,212,191,0.4); color: #5eead4; }
 @media (max-width: 640px) {
   .company-title { font-size: 2.25rem; white-space: normal; }
-  .company-paragraph { max-width: 22rem; }
+  .company-paragraph { max-width: 100%; padding-left: 1rem; padding-right: 1rem; }
+  .videos-grid { gap: 2rem; }
+  .contact-card { width: 100%; max-width: 100%; }
 }

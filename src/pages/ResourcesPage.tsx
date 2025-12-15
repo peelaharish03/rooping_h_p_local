@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Shield, Brain, Database, Zap, CheckCircle, Globe, ChevronRight, Lock, Activity, Target, LayoutDashboard, LockKeyhole, Bot, KeyRound, SearchCheck, Network, ScanEye, Chrome, ArrowRight } from 'lucide-react';
+import { Shield, Brain, Database, Zap, CheckCircle, Globe, ChevronRight, Lock, Activity, Target, LayoutDashboard, LockKeyhole, Bot, KeyRound, SearchCheck, Network, ScanEye, Chrome, ArrowRight, Landmark, ShoppingBag } from 'lucide-react';
 import Footer from '../components/Footer';
 import './ResourcesPage.css';
 
@@ -7,6 +7,42 @@ type ResourcesPageProps = {
   onNavigate: (page: string) => void;
   onOpenDemo: () => void;
 };
+
+const TechIcon = (props: any) => (
+  <svg
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <polyline points="16 18 22 12 16 6" />
+    <polyline points="8 6 2 12 8 18" />
+    <line x1="10" x2="14" y1="22" y2="2" />
+  </svg>
+);
+
+const DefenseIcon = (props: any) => (
+  <svg
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+  </svg>
+);
 
 export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageProps) {
   const [floatingElements, setFloatingElements] = useState({
@@ -181,19 +217,19 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
         <div className="resources-container resources-center">
           <div className="center-row"><div className="pill">PROPRIETARY PIPELINE</div></div>
           <h3 className="resources-h3">Threat Flow & AI Engine</h3>
-          <div className="pipeline">
+          <div className="pipeline flex flex-col md:flex-row items-center justify-center gap-8">
             <div className="pipeline-item group">
               <div className="pipeline-iconbox"><Database className="icon-52 slate300" /></div>
               <div className="pipeline-title">1. Ingest</div>
               <div className="pipeline-sub">Ingests billions of signals (Dark Web, OSINT) + browser-layer telemetry.</div>
             </div>
-            <ChevronRight className="icon-24 slate600" />
+            <ChevronRight className="icon-24 slate600 rotate-90 md:rotate-0" />
             <div className="pipeline-item group">
               <div className="pipeline-circle"><Brain className="icon-44 brand300" /></div>
               <div className="pipeline-title">2. Analyze</div>
               <div className="pipeline-sub">Behavioral AI classifies exposures and predicts exploitability in real-time.</div>
             </div>
-            <ChevronRight className="icon-24 slate600" />
+            <ChevronRight className="icon-24 slate600 rotate-90 md:rotate-0" />
             <div className="pipeline-item group">
               <div className="pipeline-iconbox"><Zap className="icon-52 slate300" /></div>
               <div className="pipeline-title">3. Remediate</div>
@@ -205,14 +241,20 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
 
       <section className="resources-section">
         <div className="resources-container">
-          <div className="usecases-head">
-            <div>
-              <h4 className="usecases-title">Strategic Use Cases</h4>
-              <p className="usecases-sub">Deployed across the most demanding environments to solve critical security gaps.</p>
-            </div>
+          <h4 className="usecases-title">Strategic Use Cases</h4>
+          <div className="usecases-heads">
+            <p className="usecases-sub">Deployed across the most demanding environments to solve critical security gaps.</p>
             <div className="usecases-tags">
-              {['Finance', 'Tech & SaaS', 'E-Commerce', 'Defense'].map((v) => (
-                <span key={v} className="usecase-tag">{v}</span>
+              {[
+                { label: 'Finance', icon: Landmark },
+                { label: 'Tech & SaaS', icon: TechIcon },
+                { label: 'E-Commerce', icon: ShoppingBag },
+                { label: 'Defense', icon: DefenseIcon },
+              ].map(({ label, icon: Icon }) => (
+                <span key={label} className="usecase-tag">
+                  <Icon className="icon-16" />
+                  {label}
+                </span>
               ))}
             </div>
           </div>

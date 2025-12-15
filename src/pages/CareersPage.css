@@ -36,4 +36,10 @@
 .resume-text { color: #64748b; }
 .resume-link { margin-left: 0.5rem; color: #2dd4bf; font-weight: 600; }
 .resume-link:hover { color: #5eead4; }
+@media (max-width: 640px) {
+  .job-card { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .apply-btn { width: 100%; text-align: center; }
+  .resume-line { display: flex; flex-direction: column; gap: 0.5rem; }
+  .resume-link { margin-left: 0; }
+}
 
