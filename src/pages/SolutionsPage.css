@@ -36,9 +36,12 @@
 
 .tm-card { border-radius: 18px; border: 1px solid rgba(255,255,255,0.1); background: rgba(14, 21, 41, 0.8); backdrop-filter: blur(10px); box-shadow: 0 20px 60px rgba(0,0,0,0.35); width: 560px; min-height: 320px; }
 @media (max-width: 640px) {
+  .solutions-grid { display: flex; flex-direction: column; }
+  .solutions-right { order: 1; }
   .tm-card {
     width: 100%;
     min-height: auto;
+    order: 2;
   }
 }
 .tm-inner { padding: 1.5rem; }

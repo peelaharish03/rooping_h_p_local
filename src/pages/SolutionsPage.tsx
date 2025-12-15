@@ -1,6 +1,7 @@
 import React from 'react';
 import { CheckCircle, Shield, Database, Activity, MessageSquare } from 'lucide-react';
 import Footer from '../components/Footer';
+import ServerIcon from '../components/ServerIcon';
 import './SolutionsPage.css';
 
 type SolutionsPageProps = {
@@ -140,12 +141,7 @@ export default function SolutionsPage({ onNavigate, onOpenDemo }: SolutionsPageP
 
             {/* center icon */}
             <div className="center-node">
-              <div className="asm-core">
-                <div className="asm-screen">
-                  <div className="asm-bar asm-bar--top"></div>
-                  <div className="asm-bar asm-bar--bottom"></div>
-                </div>
-              </div>
+              <ServerIcon size={120} />
             </div>
 
             {/* labels */}

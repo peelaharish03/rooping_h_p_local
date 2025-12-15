@@ -90,6 +90,21 @@
 @media (min-width: 1024px) { .platform-grid { grid-template-columns: 1fr 300px; gap: 0; } }
 
 .abd-left { max-width: 800px; padding-right: 2rem; }
+
+@media (max-width: 1023px) {
+  .platform-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .abd-left {
+    order: 1;
+    text-align: left;
+  }
+  .abd-console-wrap {
+    order: 2;
+    margin-top: 2rem;
+  }
+}
 .abd-kicker { font-size: 0.875rem; color: #8C8FA3; font-weight: 600; margin-bottom: 0.25rem; }
 .abd-lock { width: 3rem; height: 3rem; border-radius: 9999px; background: #0b1121; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; color: #9D4EDD; }
 .abd-title { margin-top: 0.75rem; font-size: 2rem; font-weight: 800; color: #ffffff; margin-bottom: 0.5rem; }
@@ -156,12 +171,12 @@
 @media (max-width: 640px) {
   .platform-heading { font-size: 2.25rem; white-space: normal; }
   .platform-sub { font-size: 1rem; padding-bottom: 1.5rem; max-width: 22rem; }
-  .abd-console-wrap { display: flex; justify-content: center; width: 100%; }
+  .abd-console-wrap { display: flex; justify-content: center; width: 100%; order: 2; }
   .abd-console { width: 100%; max-width: 320px; height: auto; padding: 1rem; margin: 0 auto; margin-left: auto; }
   .abd-input-wrap { width: 100%; max-width: 100%; }
   .sign-in-btn { width: 100%; max-width: 100%; }
-  .abd-left { text-align: center; }
-  .abd-label { text-align: center; }
+  .abd-left { text-align: left; order: 1; }
+  .abd-label { text-align: left; }
 }
 /* .pk{ */
   /* background-color:white; */

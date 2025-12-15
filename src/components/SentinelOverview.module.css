@@ -24,8 +24,12 @@
 .lowerRow { margin-top: 12px; display: grid; grid-template-columns: 1.8fr 1fr; gap: 12px; align-items: stretch; }
 @media (max-width: 640px) {
   .lowerRow { grid-template-columns: 1fr; }
-  .statsRow { grid-template-columns: repeat(2, 1fr); }
-  .card { width: 100%; min-height: auto; }
+  .statsRow { grid-template-columns: repeat(4, 1fr); gap: 4px; }
+  .stat { padding: 6px; height: auto; min-height: 64px; }
+  .statTitle { font-size: 9px; word-break: break-word; }
+  .statValue { font-size: 18px; }
+  .card { width: 100%; min-height: auto; order: 2; }
+  .right { order: 1; }
 }
 .chart { border-radius: 10px; background: rgba(11, 17, 33, 0.8); border: 1px solid rgba(255,255,255,0.1); padding: 12px; display: flex; flex-direction: column; max-height: 220px; }
 .chartHead { font-size: 14px; font-weight: 600; color: #ffffff; margin-bottom: 8px; }
