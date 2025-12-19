@@ -76,7 +76,7 @@ export default function PlatformPage({ onNavigate, onOpenDemo }: PlatformPagePro
             <span className="platform-gradient-text">Total Visibility.</span>
           </h1>
           <p className="platform-sub">
-            From the dark web to the browser tab, RootPing unifies exposure management and endpoint security into a single, intelligent nerve center.
+            From the dark web to the browser tab, RootPing unifies exposure management <br /> and endpoint security into a single, intelligent nerve center.
           </p>
           <SentinelOverview />
         </div>
@@ -148,7 +148,7 @@ export default function PlatformPage({ onNavigate, onOpenDemo }: PlatformPagePro
               </div>
               <h3 className="capability-heading">Shadow IT Discovery</h3>
               <p className="capability-description">
-                Automatically detect and categorize unmanaged SaaS applications and cloud resources.
+                Automatically detect and categorize unmanaged <br /> SaaS applications and cloud resources.
               </p>
             </div>
             <div className="capability-card">
@@ -162,11 +162,11 @@ export default function PlatformPage({ onNavigate, onOpenDemo }: PlatformPagePro
             </div>
             <div className="capability-card">
               <div className="capability-icon">
-                <FileCheck size={32} strokeWidth={2} />
+                <FileWarning size={32} strokeWidth={2} />
               </div>
               <h3 className="capability-heading">Compliance Reporting</h3>
               <p className="capability-description">
-                Generate audit-ready reports for SOC2, ISO 27001, and GDPR with a single click.
+                Generate audit-ready reports for SOC2, ISO <br /> 27001, and GDPR with a single click.
               </p>
             </div>
           </div>

@@ -70,7 +70,7 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
       <section className="resources-hero">
         <div className="resources-container resources-center">
           <div className="center-row">
-            <div className="pill"><span className="dot green"></span>UNIFIED EXPOSURE INTELLIGENCE</div>
+            <div className="pill"><span className="dot"></span>UNIFIED EXPOSURE INTELLIGENCE</div>
           </div>
           <h1 className="resources-title">
             <span className="resources-line">See Every <span className="resources-gradient-1">Exposure.</span></span>
@@ -102,8 +102,7 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
                     <span className="sv-dot sv-dot--green"></span>
                   </div>
                   <div className="sv-stubs">
-                    <span className="sv-stub sv-stub--sm"></span>
-                    <span className="sv-stub sv-stub--lg"></span>
+                    <span className="sv-stub sv-stub--xl"></span>
                   </div>
                 </div>
                 <div className="bg-line"></div>
@@ -223,13 +222,13 @@ export default function ResourcesPage({ onNavigate, onOpenDemo }: ResourcesPageP
               <div className="pipeline-title">1. Ingest</div>
               <div className="pipeline-sub">Ingests billions of signals (Dark Web, OSINT) + browser-layer telemetry.</div>
             </div>
-            <ChevronRight className="icon-24 slate600 rotate-90 md:rotate-0" />
+            <ArrowRight className="icon-32 slate600 rotate-90 md:rotate-0" />
             <div className="pipeline-item group">
               <div className="pipeline-circle"><Brain className="icon-44 brand300" /></div>
               <div className="pipeline-title">2. Analyze</div>
               <div className="pipeline-sub">Behavioral AI classifies exposures and predicts exploitability in real-time.</div>
             </div>
-            <ChevronRight className="icon-24 slate600 rotate-90 md:rotate-0" />
+            <ArrowRight className="icon-32 slate600 rotate-90 md:rotate-0" />
             <div className="pipeline-item group">
               <div className="pipeline-iconbox"><Zap className="icon-52 slate300" /></div>
               <div className="pipeline-title">3. Remediate</div>
