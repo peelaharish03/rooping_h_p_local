@@ -7,7 +7,7 @@ const ServerIcon = ({ size = 220 }: { size?: number }) => {
        height={size} 
        viewBox="0 0 220 220" 
        fill="none" 
-       xmlns="http://www.w3.org/2000/svg" 
+       xmlns="" 
      > 
        <defs> 
          <radialGradient id="bg" cx="0.5" cy="0.5" r="0.7"> 
