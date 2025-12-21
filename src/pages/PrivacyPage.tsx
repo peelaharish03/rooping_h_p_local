@@ -12,20 +12,22 @@ export default function PrivacyPage({ onNavigate, onOpenDemo }: PrivacyPageProps
     <div className="privacy-page">
       <section className="privacy-hero">
         <div className="privacy-container">
-          <h1 className="privacy-title">Rootping Privacy Policy</h1>
-          <div className="privacy-updated">Last updated: 11/30/2025</div>
-          <p className="privacy-intro">
-            Rootping ("Rootping", "we", "us", "our") is committed to protecting your privacy and maintaining your trust. This
-            Privacy Policy explains how we collect, use, disclose, and safeguard personal information when you visit our
-            websites, purchase our services, or interact with us.
-          </p>
-          <p className="privacy-intro">
-            This Policy applies to all visitors of www.rootping.com and to all products and services we offer, including our
-            Threat Center resources and internal Threat Intelligence systems.
-          </p>
-          <p className="privacy-intro">
-            By accessing our websites or using our services, you agree to the terms outlined in this Privacy Policy.
-          </p>
+          <div className="privacy-hero-content">
+            <h1 className="privacy-title">Rootping Privacy Policy</h1>
+            <div className="privacy-updated">Last updated: 11/30/2025</div>
+            <p className="privacy-intro">
+              Rootping ("Rootping", "we", "us", "our") is committed to protecting your privacy and maintaining your trust. This
+              Privacy Policy explains how we collect, use, disclose, and safeguard personal information when you visit our
+              websites, purchase our services, or interact with us.
+            </p>
+            <p className="privacy-intro">
+              This Policy applies to all visitors of www.rootping.com and to all products and services we offer, including our
+              Threat Center resources and internal Threat Intelligence systems.
+            </p>
+            <p className="privacy-intro">
+              By accessing our websites or using our services, you agree to the terms outlined in this Privacy Policy.
+            </p>
+          </div>
         </div>
       </section>
 

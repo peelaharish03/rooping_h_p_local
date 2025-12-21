@@ -2,8 +2,8 @@
 .solutions-hero { padding-top: 4rem; }
 .solutions-container { max-width: 80rem; margin-left: auto; margin-right: auto; padding-left: 1.5rem; padding-right: 1.5rem; }
 .solutions-center { text-align: center; }
-.solutions-title { font-weight: 800; line-height: 1.1; font-size: 3rem; white-space: nowrap; letter-spacing: -0.02em; }
-@media (min-width: 768px) { .solutions-title { font-size: 3.75rem; line-height: 1; } }
+.solutions-title { font-weight: 700; line-height: 1.1; font-size: 2.75rem; white-space: nowrap; letter-spacing: -0.02em; }
+@media (min-width: 768px) { .solutions-title { font-size: 3.5rem; line-height: 1; } }
 .solutions-title-static { color: #ffffff; }
 .solutions-gradient { color: rgb(45 212 191 / 1); }
 .solutions-sub { margin-top: 1.5rem; color: rgb(148 163 184 / var(--tw-text-opacity, 1)); font-size: 1.25rem; line-height: 1.6; max-width: 48rem; margin-left: auto; margin-right: auto; }
@@ -15,7 +15,10 @@
 .solutions-section { padding-top: 4rem; padding-bottom: 4rem; }
 .solutions-border-top { border-top: 1px solid rgba(255,255,255,0.1); }
 .solutions-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: start; }
-@media (min-width: 1024px) { .solutions-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { 
+  .solutions-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } 
+  .responsiveBreak { display: none; }
+}
 .solutions-grid2 { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: center; }
 @media (min-width: 1024px) { .solutions-grid2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
@@ -35,7 +38,7 @@
 .dot.red { background: #ef4444; }
 
 .tm-card { border-radius: 18px; border: 1px solid rgba(255,255,255,0.1); background: rgba(14, 21, 41, 0.8); backdrop-filter: blur(10px); box-shadow: 0 20px 60px rgba(0,0,0,0.35); width: 560px; min-height: 320px; }
-@media (max-width: 640px) {
+@media (max-width: 1023px) {
   .solutions-grid { display: flex; flex-direction: column; }
   .solutions-right { order: 1; }
   .tm-card {
@@ -43,6 +46,7 @@
     min-height: auto;
     order: 2;
   }
+  .responsiveBreak { display: block; content: ""; margin-bottom: 0; }
 }
 .tm-inner { padding: 1.5rem; }
 .tm-head { display: flex; align-items: center; justify-content: space-between; }

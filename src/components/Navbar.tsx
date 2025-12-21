@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import './Navbar.css';
 
 type Link = { name: string; page?: string; href?: string };
@@ -70,7 +70,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, onOpenDemo }) => {
             <div className="login-group">
               <button className="login-button">
                 <span>Login</span>
-                <span className="mask-icon icon-16 icon-chevron-down" />
+                <ChevronDown className="icon-16" />
               </button>
               <div className="dropdown">
                 <div className="dropdown-panel">

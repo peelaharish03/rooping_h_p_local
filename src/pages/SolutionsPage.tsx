@@ -83,9 +83,7 @@ export default function SolutionsPage({ onNavigate, onOpenDemo }: SolutionsPageP
           <div className="solutions-right">
             <h2 className="solutions-h2">Complete Browser Isolation</h2>
             <p className="solutions-right-sub">
-              Protect your workforce from web-borne threats without disrupting<br />
-              productivity. Our solution integrates directly into Chrome, Edge, and<br />
-              Safari.
+              Protect your workforce from web-borne threats without disrupting productivity. Our solution<br className="responsiveBreak" /> integrates directly into Chrome, Edge, and Safari.
             </p>
             <div className="solutions-list">
               {[
