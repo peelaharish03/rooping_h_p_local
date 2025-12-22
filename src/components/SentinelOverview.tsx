@@ -92,7 +92,7 @@ export default function SentinelOverview() {
         <div className={styles.rightIconWrap}><Globe size={24} /></div>
         <h2 className={styles.title}>Unified Exposure Intelligence</h2>
         <p className={styles.desc}>
-          Most breaches start on the outside. We continuously map your entire digital footprint—cloud assets, leaked credentials, and shadow IT—correlating billions of signals to find the one weakness that matters.
+          Most breaches start on the outside. We continuously map your entire digital footprint—cloud assets,<br className={styles.responsiveBreak} /> leaked credentials, and shadow IT—correlating billions of signals to find the one weakness that<br className={styles.responsiveBreak} /> matters.
         </p>
           <div className={styles.bullets}>
           <div className={styles.bullet}><svg className="text-teal-400" xmlns="" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(45, 212, 191)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span className={styles.bulletText}>Real-time correlation of Dark Web & OSINT signals</span></div>

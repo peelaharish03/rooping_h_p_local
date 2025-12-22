@@ -18,8 +18,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenDemo }) => {
               <span className="footer__brand-title">ROOTPING</span>
             </a>
             <p className="footer__desc">
-              The first unified platform for Exposure Threat Management and Enterprise Browser Security. 
-              Secure your digital footprint today.
+              The first unified platform for Exposure Threat<br />
+              Management and Enterprise Browser Security. Secure<br />
+              your digital footprint today.
             </p>
             <div className="footer__socials">
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="footer__social" aria-label="Twitter">
