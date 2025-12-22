@@ -23,7 +23,7 @@ export default function SolutionsPage({ onNavigate, onOpenDemo }: SolutionsPageP
             your infrastructure to stop threats at the source.
           </p>
           <div className="solutions-actions">
-            <button onClick={() => onNavigate('platform')} className="solutions-cta">Explore Solutions</button>
+            <button onClick={onOpenDemo} className="solutions-cta">Explore Solutions</button>
           </div>
         </div>
       </section>
@@ -56,7 +56,7 @@ export default function SolutionsPage({ onNavigate, onOpenDemo }: SolutionsPageP
               <div className="tm-threats">
                 <div className="tm-threat-item">
                   <div className="tm-threat-name" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg xmlns="" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <circle cx="12" cy="12" r="10" />
                       <line x1="2" x2="22" y1="12" y2="12" />
                       <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
@@ -67,7 +67,7 @@ export default function SolutionsPage({ onNavigate, onOpenDemo }: SolutionsPageP
                 </div>
                 <div className="tm-threat-item">
                   <div className="tm-threat-name" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg xmlns="" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
                       <path d="M12 12v9" />
                       <path d="m16 16-4-4-4 4" />
@@ -92,7 +92,7 @@ export default function SolutionsPage({ onNavigate, onOpenDemo }: SolutionsPageP
                 'Data Loss Prevention (DLP) controls',
               ].map((item) => (
                 <div key={item} className="solutions-li">
-                  <svg className="icon-20" style={{ color: 'rgb(45, 212, 191)' }} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  <svg className="icon-20" style={{ color: 'rgb(45, 212, 191)' }} xmlns="" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                   <div className="solutions-li-text">{item}</div>
                 </div>
               ))}
@@ -169,7 +169,7 @@ export default function SolutionsPage({ onNavigate, onOpenDemo }: SolutionsPageP
             <div className="ecos-card group">
               <div className="ecos-iconbox ecos-iconbox--red">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns=""
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
