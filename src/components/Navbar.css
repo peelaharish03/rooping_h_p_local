@@ -16,7 +16,7 @@
 .nav-actions { display: none; align-items: center; gap: 1rem; }
 @media (min-width: 768px) { .nav-actions { display: flex; } }
 .login-group { position: relative; }
-.login-button { display: flex; align-items: center; gap: 0.25rem; font-size: 0.875rem; color: #ffffff; background: transparent; border: 0; padding: 0; cursor: pointer; transition: color 200ms ease; }
+.login-button { display: flex; align-items: center; gap: 0.25rem; font-size: 0.875rem; color: #ffffff; background: transparent; border: 0; padding: 0; cursor: pointer; transition: color 200ms ease; font-weight: bold; }
 .login-button:hover { color: rgb(45 212 191 / 1); }
 .dropdown { position: absolute; right: 0; padding-top: 0.5rem; width: 18rem; opacity: 0; visibility: hidden; transition: opacity 200ms ease, visibility 200ms ease; }
 .login-group:hover .dropdown { opacity: 1; visibility: visible; }
