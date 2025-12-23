@@ -1,6 +1,6 @@
 .privacy-page { min-height: 100vh; }
 .privacy-hero { padding-top: 5rem; }
-.privacy-container { max-width: 80rem; margin-left: auto; margin-right: auto; padding-left: 1.5rem; padding-right: 1.5rem; text-align: center; }
+.privacy-container { max-width: 80rem; margin-left: auto; margin-right: auto; padding-left: 13.5rem; padding-right: 1.5rem; text-align: center; }
 .privacy-title {
   font-weight: 700;
   line-height: 1.1;
@@ -48,3 +48,11 @@
   margin-right: auto;
   text-align: left;
 }
+
+/* Compact spacing for split Terms hero lines */
+.terms-line { margin-top: 0.25rem; }
+.terms-shift .privacy-hero-content { padding-left: 0.75rem; }
+.terms-shift .privacy-panel { padding-left: 0.75rem; }
+.terms-hero .privacy-intro { margin-top: 0.5rem; margin-bottom: 0; }
+.terms-hero .terms-line { margin-top: 0.2rem; }
+.terms-hero .privacy-intro:first-of-type { margin-top: 5.25rem; }

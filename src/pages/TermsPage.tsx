@@ -9,22 +9,19 @@ type TermsPageProps = {
 
 export default function TermsPage({ onNavigate, onOpenDemo }: TermsPageProps) {
   return (
-    <div className="privacy-page">
+    <div className="privacy-page terms-shift">
       <section className="privacy-hero">
         <div className="privacy-container">
-          <h1 className="privacy-title">Rootping Terms of Service</h1>
-          <div className="privacy-updated">Last updated: 11/25/2025</div>
-          <p className="privacy-intro">
-            Welcome to Rootping. These Terms of Service ("Terms") govern your access to and use of the Rootping
-            website, platform, and services, including our Threat Exposure Management and Threat Intelligence
-            products (collectively, the "Services").
-          </p>
-          <p className="privacy-intro">
-            By accessing or using the Services, you agree to be bound by these Terms. If you do not agree, do not use the Services.
-          </p>
-          <p className="privacy-intro">
-            "Rootping," "we," "us," and "our" refer to Rootping and its affiliates.
-          </p>
+          <div className="privacy-hero-content terms-hero">
+            <h1 className="privacy-title">Rootping Terms of Service</h1>
+            <div className="privacy-updated">Last updated: 11/25/2025</div>
+            <p className="privacy-intro">Welcome to Rootping. These Terms of Service (“Terms”) govern your access to and use of the Rootping</p>
+            <p className="privacy-intro terms-line">website, platform, and services, including our Threat Exposure Management and Threat Intelligence products</p>
+            <p className="privacy-intro terms-line">(collectively, the “Services”).</p>
+            <p className="privacy-intro terms-line">By accessing or using the Services, you agree to be bound by these Terms. If you do not agree, do not use the</p>
+            <p className="privacy-intro terms-line">Services.</p>
+            <p className="privacy-intro terms-line">“Rootping,” “we,” “us,” and “our” refer to Rootping and its affiliates.</p>
+          </div>
         </div>
       </section>
 
@@ -88,8 +85,10 @@ export default function TermsPage({ onNavigate, onOpenDemo }: TermsPageProps) {
               <li>Provide the Services</li>
               <li>Improve the functionality and performance of the Services (in anonymized or aggregated form)</li>
             </ul>
-            <p className="privacy-paragraph">Rootping uses industry-standard security measures to protect Customer Data but cannot guarantee absolute security.</p>
-            <p className="privacy-paragraph">You are responsible for ensuring your use complies with relevant privacy, regulatory, and data-governance requirements.</p>
+            <p className="privacy-paragraph">Rootping uses industry-standard security measures to protect Customer Data but cannot guarantee absolute</p>
+            <p className="privacy-paragraph terms-line">security.</p>
+            <p className="privacy-paragraph">You are responsible for ensuring your use complies with relevant privacy, regulatory, and data-governance</p>
+            <p className="privacy-paragraph terms-line">requirements.</p>
           </div>
         </div>
       </section>
@@ -114,14 +113,16 @@ export default function TermsPage({ onNavigate, onOpenDemo }: TermsPageProps) {
         <div className="privacy-container">
           <div className="privacy-panel">
             <h2 className="privacy-h2">7. Intellectual Property</h2>
-            <p className="privacy-paragraph">All content, software, designs, trademarks, and materials related to the Services are the property of Rootping and protected by intellectual property laws.</p>
+            <p className="privacy-paragraph">All content, software, designs, trademarks, and materials related to the Services are the property of Rootping</p>
+            <p className="privacy-paragraph terms-line">and protected by intellectual property laws.</p>
             <p className="privacy-paragraph">You may not:</p>
             <ul className="privacy-list">
               <li>Copy, modify, or distribute any part of the Services</li>
               <li>Use Rootping trademarks without written permission</li>
               <li>Create derivative works based on the Services</li>
             </ul>
-            <p className="privacy-paragraph">Rootping grants you a limited, revocable, non-transferable license to use the Services for your internal business purposes only.</p>
+            <p className="privacy-paragraph terms-line">Rootping grants you a limited, revocable, non-transferable license to use the Services for your internal business</p>
+            <p className="privacy-paragraph terms-line">purposes only.</p>
           </div>
         </div>
       </section>
@@ -166,7 +167,8 @@ export default function TermsPage({ onNavigate, onOpenDemo }: TermsPageProps) {
         <div className="privacy-container">
           <div className="privacy-panel">
             <h2 className="privacy-h2">10. Confidentiality</h2>
-            <p className="privacy-paragraph">Both parties agree to keep confidential information private and use it only for performing their obligations under these Terms.</p>
+            <p className="privacy-paragraph">Both parties agree to keep confidential information private and use it only for performing their obligations under</p>
+            <p className="privacy-paragraph terms-line">these Terms.</p>
             <p className="privacy-paragraph">Confidential information does not include:</p>
             <ul className="privacy-list">
               <li>Publicly available data</li>
@@ -206,7 +208,7 @@ export default function TermsPage({ onNavigate, onOpenDemo }: TermsPageProps) {
             <p className="privacy-paragraph">To the maximum extent permitted by law:</p>
             <ul className="privacy-list">
               <li>Rootping is not liable for indirect, incidental, special, consequential, or punitive damages.</li>
-              <li>Rootping’s total liability for any claim will not exceed the amount paid by you in the past 12 months (or $100 USD if no fees were paid).</li>
+              <li>Rootping’s total liability for any claim will not exceed the amount paid by you in the past 12 months (or $100<br />USD if no fees were paid).</li>
             </ul>
             <p className="privacy-paragraph">These limitations apply even if Rootping was advised of the possibility of such damages.</p>
           </div>
@@ -225,7 +227,8 @@ export default function TermsPage({ onNavigate, onOpenDemo }: TermsPageProps) {
               <li>Your use poses a security, legal, or operational risk</li>
               <li>We discontinue the Services</li>
             </ul>
-            <p className="privacy-paragraph">Upon termination, you must stop using all Services, and we may delete stored data unless retention is legally required.</p>
+            <p className="privacy-paragraph">Upon termination, you must stop using all Services, and we may delete stored data unless retention is legally</p>
+            <p className="privacy-paragraph terms-line">required.</p>
           </div>
         </div>
       </section>
@@ -248,7 +251,7 @@ export default function TermsPage({ onNavigate, onOpenDemo }: TermsPageProps) {
             <ul className="privacy-list">
               <li>Update the “Last Updated” date</li>
               <li>Provide notice on the website or via email (when appropriate)</li>
-            </ul>
+              </ul>
             <p className="privacy-paragraph">Continued use of the Services after changes constitutes acceptance of the updated Terms.</p>
           </div>
         </div>
