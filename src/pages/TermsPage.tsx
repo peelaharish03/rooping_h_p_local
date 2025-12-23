@@ -14,7 +14,8 @@ export default function TermsPage({ onNavigate, onOpenDemo }: TermsPageProps) {
         <div className="privacy-container">
           <div className="privacy-hero-content terms-hero">
             <h1 className="privacy-title">Rootping Terms of Service</h1>
-            <div className="privacy-updated">Last updated: 11/25/2025</div>
+            <div className="privacy-updated large-gap">Last updated: 11/25/2025</div>
+            <div className="terms-separator large-gap"></div>
             <p className="privacy-intro">Welcome to Rootping. These Terms of Service (“Terms”) govern your access to and use of the Rootping</p>
             <p className="privacy-intro terms-line">website, platform, and services, including our Threat Exposure Management and Threat Intelligence products</p>
             <p className="privacy-intro terms-line">(collectively, the “Services”).</p>
@@ -257,13 +258,20 @@ export default function TermsPage({ onNavigate, onOpenDemo }: TermsPageProps) {
         </div>
       </section>
 
-      <section className="privacy-section">
+      <section className="privacy-section privacy-bottom-gap">
         <div className="privacy-container">
           <div className="privacy-panel">
             <h2 className="privacy-h2">Contact Information</h2>
+            <p className="privacy-paragraph">If you have questions about these Terms, please contact:</p>
             <div className="privacy-contact-list">
-              <div className="privacy-contact-item"><span className="dot green"></span><a href="mailto:security@rootping.com" className="privacy-contact-link privacy-contact-email">security@rootping.com</a></div>
-              <div className="privacy-contact-item"><span className="dot green"></span><a href="https://www.rootping.com" target="_blank" rel="noreferrer" className="privacy-contact-link privacy-contact-url">https://www.rootping.com</a></div>
+              <div className="privacy-contact-item">
+                <span>📧</span>
+                <span className="privacy-contact-email">security@rootping.com</span>
+              </div>
+              <div className="privacy-contact-item">
+                <span>🌐</span>
+                <a href="https://www.rootping.com" className="privacy-contact-url" target="_blank" rel="noopener noreferrer">https://www.rootping.com</a>
+              </div>
             </div>
           </div>
         </div>
