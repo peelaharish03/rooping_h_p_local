@@ -207,10 +207,20 @@ export default function PrivacyPage({ onNavigate, onOpenDemo }: PrivacyPageProps
           <div className="privacy-panel">
             <h2 className="privacy-h2">12. Contact Us</h2>
             <p className="privacy-paragraph">If you have questions, requests, or concerns about this Privacy Policy or Rootping’s privacy practices, please contact:</p>
-            <div className="privacy-contact-list">
+            {/* <div className="privacy-contact-list">
               <div className="privacy-contact-item">
                 <span className="dot green"></span>
                 <span className="privacy-contact-email">privacy@rootping.com</span>
+              </div>
+            </div> */}
+            <div className="privacy-contact-list">
+              <div className="privacy-contact-item">
+                <span>📧</span>
+                <span className="privacy-contact-email">security@rootping.com</span>
+              </div>
+              <div className="privacy-contact-item">
+                <span>🌐</span>
+                <a href="https://www.rootping.com" className="privacy-contact-url" target="_blank" rel="noopener noreferrer">https://www.rootping.com</a>
               </div>
             </div>
           </div>
