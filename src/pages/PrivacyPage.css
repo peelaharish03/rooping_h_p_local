@@ -15,17 +15,18 @@
   }
 }
 .privacy-updated { margin-top: 0.5rem; color: #64748b; font-size: 0.875rem; }
+.privacy-updated.large-gap { margin-top: 1.5rem; }
 .privacy-intro { margin-top: 2rem; color: #cbd5e1; }
 .privacy-section { padding-top: 0.5rem; padding-bottom: 0.5rem; }
 .privacy-panel { max-width: 64rem; margin-left: auto; margin-right: auto; padding: 0; text-align: left; }
-.privacy-h2 { color: #ffffff; font-size: 1.5rem; font-weight: 700; }
-@media (min-width: 768px) { .privacy-h2 { font-size: 1.875rem; } }
-.privacy-subh { margin-top: 0.5rem; color: #cbd5e1; font-weight: 600; }
-.privacy-list { margin-top: 0.25rem; color: #cbd5e1; padding-left: 0; list-style: none; }
+.privacy-h2 { color: #ffffff; font-size: 1.25rem; font-weight: 700; }
+@media (min-width: 768px) { .privacy-h2 { font-size: 1.5rem; } }
+.privacy-subh { margin-top: 0.5rem; color: #ffffff; font-weight: 600; font-size: 1.25rem; }
+.privacy-list { margin-top: 1.25rem; color: #cbd5e1; padding-left: 0; list-style: none; }
 .privacy-list li { position: relative; padding-left: 1.25rem; margin-top: 0.2rem; }
-.privacy-list li::before { content: ""; position: absolute; left: 0; top: 0.6rem; width: 0.5rem; height: 0.5rem; border-radius: 9999px; background: rgb(45 212 191 / 1); }
+.privacy-list li::before { content: ""; position: absolute; left: 0; top: 0.65rem; width: 0.3rem; height: 0.3rem; border-radius: 9999px; background: rgb(45 212 191 / 1); }
 .privacy-note { margin-top: 0.25rem; color: #94a3b8; }
-.privacy-paragraph { margin-top: 0.25rem; color: #cbd5e1; }
+.privacy-paragraph { margin-top: 0.25rem; margin-bottom: 0; color: #cbd5e1; }
 
 .privacy-link { color: #5eead4; }
 .privacy-link:hover { color: #7c3aed; }
@@ -55,4 +56,22 @@
 .terms-shift .privacy-panel { padding-left: 0.75rem; }
 .terms-hero .privacy-intro { margin-top: 0.5rem; margin-bottom: 0; }
 .terms-hero .terms-line { margin-top: 0.2rem; }
-.terms-hero .privacy-intro:first-of-type { margin-top: 5.25rem; }
+.terms-hero .terms-gap { margin-top: 1.25rem; }
+.terms-hero .privacy-intro:first-of-type { margin-top: 0; }
+
+.terms-separator {
+  height: 1px;
+  background-color: #334155;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 80%;
+}
+
+.terms-separator.large-gap {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.privacy-bottom-gap {
+  padding-bottom: 5rem;
+}
